@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
 
         Move(h, v);
         Turning();
-        Animating(h, v);
     }
     void Move(float h, float v)
     {
@@ -46,10 +45,4 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Animating(float h, float v)
-    {
-        bool walking = h != 0f || v != 0f;
-        anim.SetBool("IsWalking", walking);
-
-    }
 }
