@@ -1,0 +1,25 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Options : State {
+
+	public override void OnEnter()
+	{
+		
+	}
+	
+	public override void OnUpdate()
+	{
+		
+	}
+	
+	public override void OnExit()
+	{
+		
+	}
+
+	public void OnBackPressed()
+	{
+		m_UIManager.ChangeState(m_UIManager.MainMenuName);
+	}
+}
