@@ -20,11 +20,14 @@ public class MainMenu : State {
 
 	public void GoToOptionsPage()
 	{
-		Debug.Log ("Voilq");
-
+		Debug.Log ("Prout");
 		m_UIManager.ChangeState(m_UIManager.OptionsName);
 
 	}
 
+	public void QuitTheGame()
+	{
+		Application.Quit ();		
+	}
 
 }

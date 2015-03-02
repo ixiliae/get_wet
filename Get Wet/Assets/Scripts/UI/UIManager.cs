@@ -6,6 +6,7 @@ public class UIManager : MonoBehaviour {
 	public string ViewsPath = "UI/Views/";
 	public string MainMenuName = "MainMenu";
 	public string OptionsName = "Options";
+	public string QuitName = "Quit";
 
 	// Use this for initialization
 	void Start () {
@@ -48,4 +49,11 @@ public class UIManager : MonoBehaviour {
 				CurrentState.OnEnter();
 			}
 		}
+
+	public class DontDestroy : MonoBehaviour {
+		void Awake() {
+			DontDestroyOnLoad(transform.gameObject);
+		}
+	}
+	
 }

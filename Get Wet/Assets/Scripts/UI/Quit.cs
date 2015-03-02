@@ -3,13 +3,19 @@ using System.Collections;
 
 public class Quit : State {
 
-	// Use this for initialization
-	void Start () {
-	
+	public override void OnEnter()
+	{
+		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public override void OnUpdate()
+	{
+		
 	}
+	
+	public override void OnExit()
+	{
+		
+	}
+
 }
