@@ -23,7 +23,7 @@ public class Animatorcontrol : MonoBehaviour {
         else if ((Input.GetAxis("Vertical") > 0 ) && (Input.GetButton("crouch")))
             animation.Play("crouchWalk");
         else if (Input.GetAxis("Vertical") > 0)
-            animation.Play("walk");
+            animation.Play("run");
         else if (Input.GetAxis("Horizontal") > 0)
             animation.Play("strafeRight");
         else if (Input.GetAxis("Horizontal") < 0)
