@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-guid: 4e5aa3b4fb998460c8d6c45a20819160
-labels:
-- control
-- controller
-- character
-- camera
-- mmo
-- mmorpg
+guid: 49ee801b5a764a147934edbccf966651
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []
