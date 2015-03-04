@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour {
 	public string MainMenuName = "MainMenu";
 	public string OptionsName = "Options";
 	public string QuitName = "Quit";
+	public string InGameName = "InGame";
 
 	// Use this for initialization
 	void Start () {

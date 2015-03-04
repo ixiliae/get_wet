@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Options : State {
 
+
 	public override void OnEnter()
 	{
 		
@@ -20,6 +21,7 @@ public class Options : State {
 
 	public void OnBackPressed()
 	{
+		Debug.Log ("Prout");
 		m_UIManager.ChangeState(m_UIManager.MainMenuName);
 	}
 }

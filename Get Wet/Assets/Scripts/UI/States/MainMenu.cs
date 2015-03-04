@@ -18,11 +18,19 @@ public class MainMenu : State {
 		
 	}
 
+	public void PlayTheGame()
+	{
+		m_UIManager.ChangeState (m_UIManager.InGameName);
+	}
+
+	public void LoadLevel(string levelName)
+	{
+		Application.LoadLevel (levelName);
+	}
+
 	public void GoToOptionsPage()
 	{
-		Debug.Log ("Prout");
 		m_UIManager.ChangeState(m_UIManager.OptionsName);
-
 	}
 
 	public void QuitTheGame()
