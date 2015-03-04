@@ -6,6 +6,7 @@ public class Animatorcontrol : MonoBehaviour {
 	// Use this for initialization
     public GameObject player;
     public float turningSpeed = 0f;
+    
 
 
 	void Start () {
@@ -15,7 +16,6 @@ public class Animatorcontrol : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float horizontal = Input.GetAxis("Horizontal") * turningSpeed * Time.deltaTime;
-
         if ((Input.GetAxis("Horizontal") < 0) && (Input.GetButton("crouch")))
             animation.Play("crouchStrafeLeft");
          else if ((Input.GetAxis("Horizontal") > 0 ) && (Input.GetButton("crouch")))
