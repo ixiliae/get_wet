@@ -15,12 +15,12 @@ public class MainMenu : State {
 	
 	public override void OnExit()
 	{
-		
+
 	}
 
 	public void PlayTheGame()
 	{
-		m_UIManager.ChangeState (m_UIManager.InGameName);
+		m_UIManager.ChangeState (m_UIManager.InterfaceName);
 	}
 
 	public void LoadLevel(string levelName)

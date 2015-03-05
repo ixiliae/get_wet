@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour {
 	public string OptionsName = "Options";
 	public string QuitName = "Quit";
 	public string InGameName = "InGame";
+	public string InterfaceName = "Interface";
 
 	// Use this for initialization
 	void Start () {
@@ -49,10 +50,12 @@ public class UIManager : MonoBehaviour {
 				CurrentState.m_UIManager = this;
 				CurrentState.OnEnter();
 			}
-		}
+	}
 
-	public class DontDestroy : MonoBehaviour {
-		void Awake() {
+	public class DontDestroy : MonoBehaviour
+	{
+		void Awake() 
+		{
 			DontDestroyOnLoad(transform.gameObject);
 		}
 	}
