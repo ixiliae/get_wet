@@ -11,14 +11,16 @@ public class UIManager : MonoBehaviour {
 	public string InterfaceName = "Interface";
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		ChangeState(MainMenuName);
 	}	
 
 	State CurrentState;	
 
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		if(CurrentState != null)
 		{
 			CurrentState.OnUpdate();
@@ -52,12 +54,9 @@ public class UIManager : MonoBehaviour {
 			}
 	}
 
-	public class DontDestroy : MonoBehaviour
+	void Awake() 
 	{
-		void Awake() 
-		{
-			DontDestroyOnLoad(transform.gameObject);
-		}
+		DontDestroyOnLoad(transform.gameObject);
 	}
 	
 }
