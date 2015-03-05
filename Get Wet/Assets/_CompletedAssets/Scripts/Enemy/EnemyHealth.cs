@@ -26,28 +26,25 @@ namespace CompleteProject
         void Update ()
         {
             // If the enemy should be sinking...
-            if(isSinking)
-            {
-                // ... move the enemy down by the sinkSpeed per second.
-                transform.Translate (-Vector3.up * sinkSpeed * Time.deltaTime);
-            }
         }
 
-        void OnCollisionEnter(Collision col)
+		void OnTriggerEnter(Collider col)
         {
-            if (col.gameObject.name == "Bullet(clone)")
+            if (col.gameObject.name == "Bulletv2(clone)")
             {
-                currentHealth -= 20;
+                TakeDamage(20);
                 Destroy(col.gameObject);
             }
+			TakeDamage(20);
+			Destroy(col.gameObject);
         }
 
         public void TakeDamage (int amount)
         {
             // If the enemy is dead...
-            if(isDead)
+            if (isDead)
              // ... no need to take damage so exit the function.
-                return;
+				return;
 
             // Play the hurt sound effect.
 
@@ -69,21 +66,14 @@ namespace CompleteProject
         {
             // The enemy is dead.
             isDead = true;
-
-            // Turn the collider into a trigger so shots can pass through it.
-            capsuleCollider.isTrigger = true;
+			StartSinking ();
+			
         }
 
 
         public void StartSinking ()
         {
-            // Find and disable the Nav Mesh Agent.
-            GetComponent <NavMeshAgent> ().enabled = false;
-
-            // Find the rigidbody component and make it kinematic (since we use Translate to sink the enemy).
-            GetComponent <Rigidbody> ().isKinematic = true;
-
-            // The enemy should no sink.
+        // The enemy should no sink.
             isSinking = true;
 
             // After 2 seconds destory the enemy.
