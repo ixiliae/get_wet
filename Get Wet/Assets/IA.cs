@@ -17,6 +17,7 @@ public class IA : MonoBehaviour {
 		if (Vector3.Distance(player.transform.position, transform.position) < 20)
 		{			
 			this.transform.LookAt(leader);
+			animation.Play("idle");
 		}
 	}
 }
