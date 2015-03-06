@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Options : State {
+public class GameOver : State {
 
 	public override void OnEnter()
 	{
@@ -16,10 +16,5 @@ public class Options : State {
 	public override void OnExit()
 	{
 		
-	}
-
-	public void OnBackPressed()
-	{
-		m_UIManager.ChangeState(m_UIManager.MainMenuName);
 	}
 }

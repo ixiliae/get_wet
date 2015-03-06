@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour {
 	public string QuitName = "Quit";
 	public string InGameName = "InGame";
 	public string InterfaceName = "Interface";
+	public string GameOverName = "GameOver";
 
 	// Use this for initialization
 	void Start () 
