@@ -13,7 +13,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Awake()
     {
-
         //playerAudio = GetComponent<AudioSource>();
 
         // Set the initial health of the player.
@@ -31,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (col.gameObject.name == "Bulletv2(Clone)")
         {
-            TakeDamage(20);
+			TakeDamage(20);
             Destroy(col.gameObject);
         }
     }

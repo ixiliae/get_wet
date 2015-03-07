@@ -7,23 +7,23 @@ public class Interface : State {
 
 	public override void OnEnter()
 	{
-		
+
 	}
 
 	void LockCursor()
 	{
-		Screen.lockCursor = true;
-		Screen.showCursor = false;
+
 	}
 	
 	public override void OnUpdate()
 	{
 		if (Input.GetKeyDown (KeyCode.Escape))
 		{
-			Screen.lockCursor = true;
 			Time.timeScale = 0f;
 			m_UIManager.ChangeState (m_UIManager.InGameName);
 		}
+
+
 	}
 
 	void Awake() 

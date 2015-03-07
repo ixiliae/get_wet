@@ -25,6 +25,7 @@ public class MainMenu : State {
 
 	public void LoadLevel(string levelName)
 	{
+		Time.timeScale = 1f;
 		Application.LoadLevel (levelName);
 	}
 
