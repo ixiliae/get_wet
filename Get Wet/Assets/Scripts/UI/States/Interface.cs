@@ -9,15 +9,11 @@ public class Interface : State {
 	{
 
 	}
-
-	void LockCursor()
-	{
-
-	}
 	
+
 	public override void OnUpdate()
 	{
-		if (Input.GetKeyDown (KeyCode.Escape))
+		if (Input.GetKeyDown (KeyCode.P))
 		{
 			Time.timeScale = 0f;
 			m_UIManager.ChangeState (m_UIManager.InGameName);
