@@ -8,6 +8,8 @@ public class ennemygunDemo : MonoBehaviour
 	public float ammo = 10;
 	public GameObject player;
 	public Transform leader;
+	int i;
+
 
 	void Start()
 	{
@@ -17,16 +19,22 @@ public class ennemygunDemo : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		
-		if (Vector3.Distance(player.transform.position, transform.position) < 20)
-			{
-			transform.LookAt(leader);
+
+		if (i % 60 == 0) {
+			if (Vector3.Distance (player.transform.position, transform.position) < 20) {
+				transform.LookAt(leader);
 				Rigidbody instantiatedProjectile = Instantiate (projectile, transform.position, transform.rotation) as Rigidbody;
 				instantiatedProjectile.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
 				ammo = ammo - 1f;
 			}
 
+		}
+		i++;
 	}
+
+}		
+			
+
+
 	
 	
-}

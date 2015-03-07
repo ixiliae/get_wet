@@ -8,7 +8,7 @@ public class AmmoAmount : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Player") {
-			GameObject obj = GameObject.Find ("Spawn");
+			GameObject obj = GameObject.Find ("Spawnpoint");
 			gunDemo Pscript = obj.GetComponent<gunDemo> ();
 			Pscript.ammo = amount;
 		}

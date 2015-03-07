@@ -27,11 +27,11 @@ public class PlayerHealth : MonoBehaviour
         damaged = false;
     }
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Bullet(clone)")
+        if (col.gameObject.name == "Bulletv2(Clone)")
         {
-            currentHealth -= 20;
+            TakeDamage(20);
             Destroy(col.gameObject);
         }
     }
