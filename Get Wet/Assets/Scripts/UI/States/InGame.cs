@@ -17,4 +17,22 @@ public class InGame : State {
 	{
 		
 	}
+
+	public void AcceptChanges()
+	{
+		m_UIManager.ChangeState(m_UIManager.InterfaceName);
+	}
+
+	public void QuitTheGame()
+	{
+		m_UIManager.ChangeState (m_UIManager.MainMenuName);
+	}
+	
+	public void LoadUIScene(string levelName)
+	{
+		Application.LoadLevel (levelName);
+	}
+
+
 }
+
