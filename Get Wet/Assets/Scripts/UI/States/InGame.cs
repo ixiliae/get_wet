@@ -21,6 +21,8 @@ public class InGame : State {
 	public void AcceptChanges()
 	{
 		m_UIManager.ChangeState(m_UIManager.InterfaceName);
+		Time.timeScale = 1f;
+		Screen.lockCursor = false;
 	}
 
 	public void QuitTheGame()
@@ -31,6 +33,12 @@ public class InGame : State {
 	public void LoadUIScene(string levelName)
 	{
 		Application.LoadLevel (levelName);
+	}
+
+	void LockCursor()
+	{
+		Screen.lockCursor = true;
+		Screen.showCursor = false;
 	}
 
 
