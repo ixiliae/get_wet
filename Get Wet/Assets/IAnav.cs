@@ -24,7 +24,7 @@ public class IAnav : MonoBehaviour
 	}
 	void Update () {
 		
-		if (false && (Vector3.Distance (player.transform.position, transform.position) < 30) && (Vector3.Distance (player.transform.position, transform.position) > 3)) {
+		if ((Vector3.Distance (player.transform.position, transform.position) < 30)) {
 			GetComponent<NavMeshAgent>().SetDestination(player.transform.position);
 		} else {
 			if (Vector3.Distance(transform.position, waypoints[w]) < 1)
