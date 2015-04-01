@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-namespace CompleteProject
-{
     public class EnemyHealth : MonoBehaviour
     {
         public int startingHealth = 100;            // The amount of health the enemy starts the game with.
@@ -30,13 +28,7 @@ namespace CompleteProject
 
 		void OnTriggerEnter(Collider col)
         {
-            if (col.gameObject.name == "Bulletv2(clone)")
-            {
-                TakeDamage(20);
-                Destroy(col.gameObject);
-            }
-			TakeDamage(20);
-			Destroy(col.gameObject);
+
         }
 
         public void TakeDamage (int amount)
@@ -80,4 +72,3 @@ namespace CompleteProject
             Destroy (gameObject, 0f);
         }
     }
-}

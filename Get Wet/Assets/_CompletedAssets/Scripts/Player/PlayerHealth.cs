@@ -30,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (col.gameObject.name == "Bulletv2(Clone)")
         {
-			TakeDamage(20);
+			
             Destroy(col.gameObject);
         }
     }
