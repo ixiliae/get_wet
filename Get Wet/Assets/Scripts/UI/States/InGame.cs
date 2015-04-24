@@ -38,7 +38,7 @@ public class InGame : State {
 	void LockCursor()
 	{
 		Screen.lockCursor = true;
-		Screen.showCursor = false;
+		Cursor.visible = false;
 	}
 
 

@@ -21,7 +21,7 @@ public class IA : MonoBehaviour {
 		if ((Vector3.Distance(player.transform.position, transform.position)< 30)&& (Vector3.Distance(player.transform.position, transform.position)> 3)){
 			transform.LookAt (leader);
 			transform.position += transform.forward * AIspeed * Time.deltaTime;
-			transform.FindChild("baseMale").animation.Play("walk");
+			transform.FindChild("baseMale").GetComponent<Animation>().Play("walk");
 		} else
 			StartCoroutine (Patrol ());
 
@@ -33,7 +33,7 @@ public class IA : MonoBehaviour {
 			transform.position += transform.forward * AIspeed * Time.deltaTime;
 			yield return new WaitForSeconds(1.5f);
 			AImoving = false;
-			transform.FindChild("baseMale").animation.Play("walk");
+			transform.FindChild("baseMale").GetComponent<Animation>().Play("walk");
 		}
 		transform.Rotate(0, AIrotate * Time.deltaTime, 0);
 		yield return new WaitForSeconds(1.5f);

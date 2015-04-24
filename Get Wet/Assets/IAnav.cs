@@ -20,7 +20,7 @@ public class IAnav : MonoBehaviour
 		waypoints = new Vector3[] {waypoint1.position, waypoint2.position ,waypoint3.position};
 		NavMeshAgent agent = GetComponent<NavMeshAgent>();
 		agent.destination = waypoints[0]; 
-		transform.FindChild ("baseMale").animation.Play ("walk");
+		transform.FindChild ("baseMale").GetComponent<Animation>().Play ("walk");
 	}
 	void Update () {
 		

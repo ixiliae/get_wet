@@ -66,7 +66,7 @@ public class PlayerHealth : MonoBehaviour
 
 
         // Tell the animator that the player is dead.
-        transform.gameObject.animation.Play("tPose");
+        transform.gameObject.GetComponent<Animation>().Play("tPose");
 
         // Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
     }

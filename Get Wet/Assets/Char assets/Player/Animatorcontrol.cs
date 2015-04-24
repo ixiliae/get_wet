@@ -20,7 +20,7 @@ public class Animatorcontrol : MonoBehaviour {
 	void Update () {
 		float horizontal = Input.GetAxis("Horizontal") * turningSpeed * Time.deltaTime;
 		if (p.currentHealth <= 0) {
-			animation.Play("tPose");
+			GetComponent<Animation>().Play("tPose");
 			if (!isdead)
 			{
 			   transform.Rotate(90,0,0);
@@ -30,23 +30,23 @@ public class Animatorcontrol : MonoBehaviour {
 
 		}     
         else if ((Input.GetAxis("Horizontal") < 0) && (Input.GetButton("crouch")))
-            animation.Play("crouchStrafeLeft");
+            GetComponent<Animation>().Play("crouchStrafeLeft");
          else if ((Input.GetAxis("Horizontal") > 0 ) && (Input.GetButton("crouch")))
-            animation.Play("crouchStrafeRight");
+            GetComponent<Animation>().Play("crouchStrafeRight");
         else if ((Input.GetAxis("Vertical") > 0 ) && (Input.GetButton("crouch")))
-            animation.Play("crouchWalk");
+            GetComponent<Animation>().Play("crouchWalk");
         else if (Input.GetAxis("Vertical") > 0)
-            animation.Play("run");
+            GetComponent<Animation>().Play("run");
         else if (Input.GetAxis("Horizontal") > 0)
-            animation.Play("strafeRight");
+            GetComponent<Animation>().Play("strafeRight");
         else if (Input.GetAxis("Horizontal") < 0)
-            animation.Play("strafeLeft");
+            GetComponent<Animation>().Play("strafeLeft");
         else if (Input.GetButton("Jump"))
-            animation.Play("jump");
+            GetComponent<Animation>().Play("jump");
         else if (Input.GetButton("crouch"))
-            animation.Play("crouch");
+            GetComponent<Animation>().Play("crouch");
         else
-            animation.Play("idle");
+            GetComponent<Animation>().Play("idle");
       
 	
 	}

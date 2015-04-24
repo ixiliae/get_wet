@@ -16,7 +16,7 @@ public class EnemyAnim : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		enemy.animation.Play ("idle");
+		enemy.GetComponent<Animation>().Play ("idle");
 		
 	}
 }

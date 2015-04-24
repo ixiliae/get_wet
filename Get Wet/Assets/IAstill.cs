@@ -21,9 +21,9 @@ public class IAstill : MonoBehaviour {
 		if ((Vector3.Distance(player.transform.position, transform.position)< 30)&& (Vector3.Distance(player.transform.position, transform.position)> 3)){
 			transform.LookAt (leader);
 			transform.position += transform.forward * AIspeed * Time.deltaTime;
-			transform.FindChild("baseMale").animation.Play("walk");
+			transform.FindChild("baseMale").GetComponent<Animation>().Play("walk");
 		} else
-			transform.FindChild("baseMale").animation.Play("idle");
+			transform.FindChild("baseMale").GetComponent<Animation>().Play("idle");
 		
 	}
 }
