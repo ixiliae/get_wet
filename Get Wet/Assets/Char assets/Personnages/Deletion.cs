@@ -4,7 +4,7 @@ using System.Collections;
 public class Deletion : MonoBehaviour {
 
 	// Use this for initialization
-    public float bulletLife = 5.0f;
+    public float bulletLife = 10.0f;
     private GameObject player;
     PlayerHealth p;
     EnemyHealth e;
