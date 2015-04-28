@@ -18,10 +18,12 @@ public class MouseAimCamera : MonoBehaviour
     {
 		if (p.isDead == false) {
 			float horizontal = Input.GetAxis ("Mouse X") * rotateSpeed;
-			target.transform.Rotate (0, horizontal, 0); 
+			float vertical = Input.GetAxis ("Mouse Y") * rotateSpeed;
+			target.transform.Rotate (vertical, horizontal, 0); 
 
 			float desiredAngle = target.transform.eulerAngles.y;
-			Quaternion rotation = Quaternion.Euler (0, desiredAngle, 0);
+			float desiredAnglez = target.transform.eulerAngles.x;
+			Quaternion rotation = Quaternion.Euler (desiredAnglez, desiredAngle, 0);
 			transform.position = target.transform.position - (rotation * offset);
 
 			transform.LookAt (target.transform);
