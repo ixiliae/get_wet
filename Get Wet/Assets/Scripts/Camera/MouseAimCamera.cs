@@ -24,7 +24,7 @@ public class MouseAimCamera : MonoBehaviour
 			float horizontal = Input.GetAxis ("Mouse X") * rotateSpeed;
 			float vertical = Input.GetAxis ("Mouse Y") * rotateSpeed;
 			target.transform.Rotate (vertical, horizontal/4, 0);
-			trans.Rotate(0, horizontal*6, 0);
+			trans.Rotate(0, horizontal*9, 0);
 
 			float desiredAngle = target.transform.eulerAngles.y;
 			float desiredAnglez = target.transform.eulerAngles.x;
