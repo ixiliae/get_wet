@@ -17,7 +17,7 @@ public class Deletion : MonoBehaviour {
         
 	}
 
-    void OnTriggerEnter(Collider col)
+    void OnCollisionEnter(Collider col)
     {
         player = col.gameObject;
 
