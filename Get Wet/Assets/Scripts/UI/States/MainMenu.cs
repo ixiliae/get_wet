@@ -18,15 +18,9 @@ public class MainMenu : State {
 
 	}
 
-	public void PlayTheGame()
+	public void GoToSelect()
 	{
-		m_UIManager.ChangeState (m_UIManager.InterfaceName);
-	}
-
-	public void LoadLevel(string levelName)
-	{
-		Time.timeScale = 1f;
-		Application.LoadLevel (levelName);
+		m_UIManager.ChangeState (m_UIManager.CharacterSelectName);
 	}
 
 	public void GoToOptionsPage()

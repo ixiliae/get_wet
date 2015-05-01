@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour {
 	public string InGameName = "InGame";
 	public string InterfaceName = "Interface";
 	public string GameOverName = "GameOver";
+	public string CharacterSelectName = "CharacterSelect";
 	
 
 	// Use this for initialization
