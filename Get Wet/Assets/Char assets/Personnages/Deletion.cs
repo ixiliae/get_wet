@@ -17,19 +17,21 @@ public class Deletion : MonoBehaviour {
         
 	}
 
-    void OnCollisionEnter(Collider col)
+    void OnTriggerEnter(Collider col)
     {
         player = col.gameObject;
 
-		if ((col.gameObject.name == "whitinola") && col.gameObject.name == "Blackinola"))
+		if ((col.gameObject.name == "whitinola") || (col.gameObject.name == "Blackinola"))
         {
             p = player.GetComponent<PlayerHealth>();
             p.TakeDamage(20);
+			Destroy(gameObject, 0);
         }
         if (col.gameObject.name == "Enemy")
         {
             e = player.GetComponent<EnemyHealth>();
             e.TakeDamage(20);
+			Destroy(gameObject, 0);
         }
        
     }

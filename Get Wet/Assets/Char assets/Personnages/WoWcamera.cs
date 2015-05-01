@@ -6,7 +6,7 @@ using System.Collections;
 public class WoWcamera : MonoBehaviour
 {
 	public Transform target;
-	
+	public Transform weapon;
 	public float targetHeight = 1.7f;
 	public float distance = 5.0f;
 	public float offsetFromWall = 0.1f;
@@ -44,6 +44,7 @@ public class WoWcamera : MonoBehaviour
 		currentDistance = distance;
 		desiredDistance = distance;
 		correctedDistance = distance;
+
 		
 		// Make the rigid body not change rotation
 		if (GetComponent<Rigidbody>())
@@ -88,6 +89,7 @@ public class WoWcamera : MonoBehaviour
 			float currentRotationAngle = transform.eulerAngles.y;
 			xDeg = Mathf.LerpAngle (currentRotationAngle, targetRotationAngle, rotationDampening * Time.deltaTime);    
 			target.transform.Rotate(0,Input.GetAxis ("Mouse X") * xSpeed * 0.02f,0);
+		weapon.Rotate(-1 * (Input.GetAxis ("Mouse Y") * ySpeed * 0.02f),-1 * (Input.GetAxis ("Mouse Y") * ySpeed * 0.02f),0);
 			xDeg += Input.GetAxis ("Mouse X") * xSpeed * 0.02f;
 
 		
