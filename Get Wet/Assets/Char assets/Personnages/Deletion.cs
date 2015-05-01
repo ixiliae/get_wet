@@ -21,7 +21,7 @@ public class Deletion : MonoBehaviour {
     {
         player = col.gameObject;
 
-        if (col.gameObject.name == "baseMale 1 1")
+		if ((col.gameObject.name == "whitinola") && col.gameObject.name == "Blackinola"))
         {
             p = player.GetComponent<PlayerHealth>();
             p.TakeDamage(20);
