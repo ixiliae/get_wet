@@ -7,6 +7,7 @@ public class WoWcamera : MonoBehaviour
 {
 	public Transform target;
 	public Transform weapon;
+	public Camera here;
 	public float targetHeight = 1.7f;
 	public float distance = 5.0f;
 	public float offsetFromWall = 0.1f;
@@ -33,6 +34,7 @@ public class WoWcamera : MonoBehaviour
 	private float yDeg = 0.0f;
 	private float currentDistance;
 	private float desiredDistance;
+
 	private float correctedDistance;
 	
 	void Start ()
@@ -44,7 +46,7 @@ public class WoWcamera : MonoBehaviour
 		currentDistance = distance;
 		desiredDistance = distance;
 		correctedDistance = distance;
-
+		here = GetComponent<Camera>();
 		
 		// Make the rigid body not change rotation
 		if (GetComponent<Rigidbody>())
@@ -70,6 +72,22 @@ public class WoWcamera : MonoBehaviour
 		//	Vector3 hitPosition = hit.point;
 		//	weapon.LookAt(hitPosition);
 		//}
+
+		Ray ray = here.ScreenPointToRay(new Vector3(Screen.height / 2, Screen.width / 2, 0));
+		Vector3 hit = ray.GetPoint (1000000);
+		hit = new Vector3 (hit.x, hit.y,hit.z);
+		weapon.LookAt (hit);
+
+//		Ray ray = here.ScreenPointToRay(new Vector3(Screen.height / 2, Screen.width / 2, 0));
+//		RaycastHit floorhit;
+//		if (Physics.Raycast(ray, out floorhit, 10000))
+//		    {
+//			Vector3 v = floorhit.point - weapon.position;
+//			v.y=0;
+//			Quaternion q =  Quaternion.LookRotation(v);
+//
+//			weapon.gameObject.GetComponent<Rigidbody>().MoveRotation(q);
+//		}
 	}
 	
 	/**
@@ -94,8 +112,11 @@ public class WoWcamera : MonoBehaviour
 			float currentRotationAngle = transform.eulerAngles.y;
 			xDeg = Mathf.LerpAngle (currentRotationAngle, targetRotationAngle, rotationDampening * Time.deltaTime);    
 			target.transform.Rotate(0,Input.GetAxis ("Mouse X") * xSpeed * 0.02f,0);
-		weapon.Rotate((Input.GetAxis ("Mouse Y") * ySpeed * 0.02f),0,0);
+		//weapon.Rotate((Input.GetAxis ("Mouse Y") * ySpeed * 0.02f),0,0);
 			xDeg += Input.GetAxis ("Mouse X") * xSpeed * 0.02f;
+
+
+
 
 
 			
