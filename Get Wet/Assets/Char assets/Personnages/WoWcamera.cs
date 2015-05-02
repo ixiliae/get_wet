@@ -89,7 +89,7 @@ public class WoWcamera : MonoBehaviour
 			float currentRotationAngle = transform.eulerAngles.y;
 			xDeg = Mathf.LerpAngle (currentRotationAngle, targetRotationAngle, rotationDampening * Time.deltaTime);    
 			target.transform.Rotate(0,Input.GetAxis ("Mouse X") * xSpeed * 0.02f,0);
-		weapon.Rotate(-1 * (Input.GetAxis ("Mouse Y") * ySpeed * 0.02f),-1 * (Input.GetAxis ("Mouse Y") * ySpeed * 0.02f),0);
+		weapon.Rotate((Input.GetAxis ("Mouse Y") * ySpeed * 0.02f),0,0);
 			xDeg += Input.GetAxis ("Mouse X") * xSpeed * 0.02f;
 
 		
