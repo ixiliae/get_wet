@@ -11,8 +11,11 @@ public class AmmoAmount : MonoBehaviour {
 			GameObject obj = GameObject.Find ("Spawnpoint");
 			gunDemo Pscript = obj.GetComponent<gunDemo> ();
 			Pscript.ammo = amount;
-			Pscript.ammo2 = 3;
+			Pscript.ammo2 = 2;
 			Destroy(gameObject);
+
+			PlayerManager.Instance.PickUpAmmo(0, 10);
+			PlayerManager.Instance.PickUpAmmo2(0, 2);
 		}
 	}
 

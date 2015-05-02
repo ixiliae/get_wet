@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerManager : MonoBehaviour
 {	
+			
+	
 			private PlayerData[] _players = new PlayerData[32];
 			
 			private static PlayerManager _instance = new PlayerManager();
@@ -20,12 +22,29 @@ public class PlayerManager : MonoBehaviour
 				}
 			}
 
-		
+			void Start()
+			{
+				for (int i = 0; i < _players.Length; i++)
+				{
+					_players[i] = new PlayerData();
+					_players[i].ammo = 10;
+					_players[i].ammo2 = 2;
+					_players[i].health = 100;
+					_players[i].score = 0;
+					_players[i].kills = 0;
+					_players[i].deaths = 0;
+					_players[i].objectives = 0;
+					_players[i].spawn = 0;
+					_players[i].character = 0;
+				}
+			}
+	
 			public void SetValues()
 			{
 				for (int i = 0; i < 32; i++) 
 				{
-					_players[i].ammo = 100;
+					_players[i].ammo = 10;
+					_players[i].ammo2 = 2;
 					_players[i].health = 100;
 					_players[i].score = 0;
 					_players[i].kills = 0;
@@ -59,7 +78,7 @@ public class PlayerManager : MonoBehaviour
 				return false;
 			}
 
-	// // // // // // // //	// // // //	// // // // // //	
+	// // // // // // // //	// // // //	// // // // // //	PlayerManager.Instance.AddHealth(0, -30);
 
 			public void AddHealth(int ID, int healthValue)
 			{
@@ -75,9 +94,14 @@ public class PlayerManager : MonoBehaviour
 
 			public void AddAmmo(int ID, int ammoCountToAdd)
 			{
-				_players[ID].ammo += ammoCountToAdd;       
+				_players [ID].ammo += ammoCountToAdd;    
 			}
-			
+		
+			public void PickUpAmmo(int ID, int ammoCountToAdd)
+			{
+				_players [ID].ammo += ammoCountToAdd - GetAmmo(ID);    
+			}
+	
 			public int GetAmmo(int ID)                       
 			{
 				return _players[ID].ammo;                         
@@ -85,6 +109,23 @@ public class PlayerManager : MonoBehaviour
 
 	// // // // // // // //	// // // //	// // // // // //	
 
+			public void AddAmmo2(int ID, int ammo2CountToAdd)
+			{
+				_players[ID].ammo2 += ammo2CountToAdd; 
+			}
+
+			public void PickUpAmmo2(int ID, int ammo2CountToAdd)
+			{
+				_players [ID].ammo2 += ammo2CountToAdd - GetAmmo2(ID);    
+			}
+			
+			public int GetAmmo2(int ID)                       
+			{
+				return _players[ID].ammo2;                         
+			}
+	
+	// // // // // // // //	// // // //	// // // // // //
+	
 			public void AddScore(int ID, int Score)
 			{
 				_players[ID].ammo += Score;
@@ -148,10 +189,11 @@ public class PlayerManager : MonoBehaviour
 				
 			}
 
-			
+	// // // // // // // //	// // // //	// // // // // //			
 
 
 
+	// // // // // // // //	// // // //	// // // // // //			
 
 
 //	        public void Health(int ID)

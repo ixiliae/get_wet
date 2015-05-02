@@ -31,8 +31,8 @@ public class InGame : State {
 	{
 		m_UIManager.ChangeState (m_UIManager.MainMenuName);
 		Time.timeScale = 1f;
-		Screen.lockCursor = true;
-		Cursor.visible = false;
+		Screen.lockCursor = false;
+		Cursor.visible = true;
 	}
 	
 	public void LoadUIScene(string levelName)
