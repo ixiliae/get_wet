@@ -10,7 +10,7 @@ public class WoWcamera : MonoBehaviour
 	public float targetHeight = 1.7f;
 	public float distance = 5.0f;
 	public float offsetFromWall = 0.1f;
-	
+	RaycastHit hit;
 	public float maxDistance = 20;
 	public float minDistance = .6f;
 	
@@ -65,6 +65,11 @@ public class WoWcamera : MonoBehaviour
 			xDeg += Input.GetAxis ("Mouse X") * targetSpeed * 0.02f;
 			target.transform.Translate(Vector3.forward * targetSpeed * Time.deltaTime);
 		}*/
+
+		//if (Physics.Raycast(transform.position, Vector3.forward, out hit)){
+		//	Vector3 hitPosition = hit.point;
+		//	weapon.LookAt(hitPosition);
+		//}
 	}
 	
 	/**
@@ -92,9 +97,9 @@ public class WoWcamera : MonoBehaviour
 		weapon.Rotate((Input.GetAxis ("Mouse Y") * ySpeed * 0.02f),0,0);
 			xDeg += Input.GetAxis ("Mouse X") * xSpeed * 0.02f;
 
-		
-		
-		// otherwise, ease behind the target if any of the directional keys are pressed
+
+			
+			// otherwise, ease behind the target if any of the directional keys are pressed
 		/*else if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
 		{
 			float targetRotationAngle = target.eulerAngles.y;
