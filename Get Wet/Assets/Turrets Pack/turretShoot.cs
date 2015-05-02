@@ -3,7 +3,7 @@ using System.Collections;
 
 public class turretShoot : MonoBehaviour
 {
-	public Rigidbody projectile;
+	public Transform projectile;
 	public float speed = 20;
 
 	public GameObject player;
@@ -20,8 +20,8 @@ public class turretShoot : MonoBehaviour
 	{
 			if (Vector3.Distance (player.transform.position, transform.position) < 20) {
 				transform.parent.LookAt(leader);
-				Rigidbody instantiatedProjectile = Instantiate (projectile, transform.position, transform.rotation) as Rigidbody;
-				instantiatedProjectile.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
+				Transform instantiatedProjectile = Instantiate (projectile, transform.position, transform.rotation) as Transform;
+				instantiatedProjectile.Rotate(90,0,0);
 				
 			
 		}
