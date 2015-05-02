@@ -21,7 +21,7 @@ public class ScoreTab : State {
 		
 	public void CloseTab()
 	{
-		if (Input.GetKeyDown (KeyCode.A)) 
+		if (Input.GetKeyDown (KeyCode.RightShift)) 
 		{
 			m_UIManager.ChangeState (m_UIManager.InterfaceName);
 			Time.timeScale = 1f;
