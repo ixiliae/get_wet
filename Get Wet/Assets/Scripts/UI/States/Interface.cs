@@ -10,7 +10,7 @@ public class Interface : State {
 
 	}
 	
-
+	
 	public override void OnUpdate()
 	{
 		Screen.lockCursor = true;

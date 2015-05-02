@@ -5,12 +5,12 @@ public class PlayerData
 {		
 	public string name;
 	public int ammo;
+	public int ammo2;
 	public int health;
 	public int score;
 	public int spawn;
 	public int character;
 	public int kills;
 	public int deaths;
-	public int objectives;
-		
+	public int objectives;		
 }
