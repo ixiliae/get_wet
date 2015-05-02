@@ -9,5 +9,8 @@ public class PlayerData
 	public int score;
 	public int spawn;
 	public int character;
+	public int kills;
+	public int deaths;
+	public int objectives;
 		
 }

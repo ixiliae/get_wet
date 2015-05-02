@@ -20,6 +20,7 @@ public class gunDemo : MonoBehaviour
 				instantiatedProjectile.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
 				this.GetComponent<AudioSource> ().Play ();
 				ammo = ammo - 1f;
+				PlayerManager.Instance.AddAmmo(0, -10);
 			}
 		}
 	    if (ammo2 > 0) {

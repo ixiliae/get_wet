@@ -10,12 +10,16 @@ public class PlayerManager : MonoBehaviour
 			{
 				get
 				{
-					if(_instance == null)
-						_instance = new PlayerManager();
+					if (_instance == null)
+					{
+						GameObject go = new GameObject("PlayerManager");
+						_instance = go.AddComponent<PlayerManager>();
+					}
 					
 					return _instance;
 				}
 			}
+
 		
 			public void SetValues()
 			{
@@ -24,6 +28,9 @@ public class PlayerManager : MonoBehaviour
 					_players[i].ammo = 100;
 					_players[i].health = 100;
 					_players[i].score = 0;
+					_players[i].kills = 0;
+					_players[i].deaths = 0;
+					_players[i].objectives = 0;
 					_players[i].spawn = 0;
 					_players[i].character = 0;
 				}
@@ -51,7 +58,9 @@ public class PlayerManager : MonoBehaviour
 				}
 				return false;
 			}
-			
+
+	// // // // // // // //	// // // //	// // // // // //	
+
 			public void AddHealth(int ID, int healthValue)
 			{
 				_players[ID].health += healthValue;
@@ -62,7 +71,7 @@ public class PlayerManager : MonoBehaviour
 				return _players[ID].health;
 			}                                                  
 		
-
+	// // // // // // // //	// // // //	// // // // // //	
 
 			public void AddAmmo(int ID, int ammoCountToAdd)
 			{
@@ -74,7 +83,7 @@ public class PlayerManager : MonoBehaviour
 				return _players[ID].ammo;                         
 			}
 
-
+	// // // // // // // //	// // // //	// // // // // //	
 
 			public void AddScore(int ID, int Score)
 			{
@@ -85,8 +94,44 @@ public class PlayerManager : MonoBehaviour
 			{
 				return _players[ID].score;
 			}
-		
 
+	// // // // // // // //	// // // //	// // // // // //	
+
+			public void AddKills(int ID, int Kills)
+			{
+				_players[ID].kills += Kills;
+			}
+			
+			public int GetKills(int ID)
+			{
+				return _players[ID].kills;
+			}
+		
+	// // // // // // // //	// // // //	// // // // // //	
+
+			public void AddDeaths(int ID, int Deaths)
+			{
+				_players[ID].deaths += Deaths;
+			}
+			
+			public int GetDeaths(int ID)
+			{
+				return _players[ID].deaths;
+			}
+
+	// // // // // // // //	// // // //	// // // // // //	
+
+			public void AddObjectives(int ID, int Objectives)
+			{
+				_players[ID].objectives += Objectives;
+			}
+			
+			public int GetObjectives(int ID)
+			{
+				return _players[ID].objectives;
+			}
+
+	// // // // // // // //	// // // //	// // // // // //	
 			
 			public void SetAmmo(int ID, int ammo)
 			{
@@ -97,10 +142,41 @@ public class PlayerManager : MonoBehaviour
 			{
 				_players[ID].ammo = healthValue;
 			}
-		
-		// PlayersManager.Instance.AddHealth(0, -30); // retire 30 de vie au perso 0
-		// 
-		// if(PlayersManager.Instance.IsAPlayerDead()) // si un des persos est mort
+
+			public void Vide()
+			{
+				
+			}
+
+			
+
+
+
+
+
+//	        public void Health(int ID)
+//	        {
+//				PlayerManager.Instance.GetHealth(ID);
+//				
+//	        }
+//
+//			public void Ammo(int ID)
+//			{
+//				PlayerManager.Instance.GetAmmo(ID);
+//			}
+//
+//			public void Scores(int ID)
+//			{
+//				PlayerManager.Instance.GetScore(ID);
+//			}
+	
+	
+	
+	
+	
+	    // PlayerManager.Instance.AddHealth(0, -30); // retire 30 de vie au perso 0
+		// PlayerManager.Instance.AddAmmo(0, -30);
+		// if(PlayerManager.Instance.IsAPlayerDead()) // si un des persos est mort
 		// {
 		// 	
 		// }
