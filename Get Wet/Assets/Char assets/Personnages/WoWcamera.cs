@@ -73,8 +73,8 @@ public class WoWcamera : MonoBehaviour
 		//	weapon.LookAt(hitPosition);
 		//}
 
-		Ray ray = here.ScreenPointToRay(new Vector3(Screen.height / 2, Screen.width / 2, 0));
-		Vector3 hit = ray.GetPoint (1000000);
+		Ray ray = here.ScreenPointToRay(new Vector3(Screen.height / 1.05f, Screen.width/2.7f, 0));
+		Vector3 hit = ray.GetPoint (100);
 		hit = new Vector3 (hit.x, hit.y,hit.z);
 		weapon.LookAt (hit);
 
