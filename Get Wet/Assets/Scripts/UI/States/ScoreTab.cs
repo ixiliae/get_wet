@@ -21,7 +21,10 @@ public class ScoreTab : State {
 		
 	public void CloseTab()
 	{
-
+		m_UIManager.ChangeState(m_UIManager.InterfaceName);
+		Time.timeScale = 1f;
+		Screen.lockCursor = true;
+		Cursor.visible = false;
 	}
 
 	public void QuitTab()
