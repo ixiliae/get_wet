@@ -3,7 +3,7 @@ using System.Collections;
 
 public class tsunamiShooter : MonoBehaviour
 {
-	public Rigidbody projectile;
+	public Transform projectile;
 	public float speed = 50;
 	public GameObject projectile2;
 	public GameObject player;
@@ -20,8 +20,8 @@ public class tsunamiShooter : MonoBehaviour
 	{
 		if (Input.GetButtonDown("Tsunami")) {
 
-			Rigidbody instantiatedProjectile = Instantiate (projectile, transform.position, transform.rotation) as Rigidbody;
-			instantiatedProjectile.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
+			Transform instantiatedProjectile = Instantiate (projectile, transform.position, transform.rotation) as Transform;
+			
 			
 		}
 		
