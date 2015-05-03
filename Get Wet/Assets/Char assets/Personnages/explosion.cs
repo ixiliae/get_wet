@@ -28,13 +28,12 @@ public class explosion : MonoBehaviour {
 	{
 		Instantiate(prefab, col.transform.position, Quaternion.identity);
 		Destroy (gameObject, 0);
-		if ((col.gameObject.name == "whitinola") || (col.gameObject.name == "Blakinola"))
-		{
+
 			p = col.gameObject.GetComponent<PlayerHealth>();
 			p.TakeDamage(damages);
 			Destroy(gameObject, 0);
 			PlayerManager.Instance.AddHealth(0, -damages);
-		}
+
 		if (col.gameObject.name == "Enemy")
 		{
 			e = col.gameObject.GetComponent<EnemyHealth>();
