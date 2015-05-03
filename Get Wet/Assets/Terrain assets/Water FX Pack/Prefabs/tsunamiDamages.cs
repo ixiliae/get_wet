@@ -22,19 +22,12 @@ public class tsunamiDamages : MonoBehaviour {
 	void OnTriggerEnter(Collider col)
 	{
 		player = col.gameObject;
-		if ((col.gameObject.name == "whitinola") || (col.gameObject.name == "Blackinola"))
-		{
+
 			p = player.GetComponent<PlayerHealth>();
 			p.TakeDamage(100);
 			
 			PlayerManager.Instance.AddHealth(0, -100);
-		}
-		if (col.gameObject.name == "Enemy")
-		{
-			e = player.GetComponent<EnemyHealth>();
-			e.TakeDamage(100);
-			
-		}
+
 		
 	}
 }
