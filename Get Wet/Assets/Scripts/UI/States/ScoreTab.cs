@@ -40,5 +40,16 @@ public class ScoreTab : State {
 		Screen.lockCursor = true;
 		Cursor.visible = false;
 	}
+
+	public void PlayTheGame()
+	{
+		m_UIManager.ChangeState (m_UIManager.InterfaceName);
+	}
+	
+	public void LoadLevel(string levelName)
+	{
+		Time.timeScale = 1f;
+		Application.LoadLevel (levelName);
+	}
 }
 
