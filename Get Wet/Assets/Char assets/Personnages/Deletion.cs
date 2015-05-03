@@ -20,16 +20,16 @@ public class Deletion : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
         player = col.gameObject;
-		if ((col.gameObject.name == "whitinola") || (col.gameObject.name == "Blackinola"))
+		if ((col.gameObject.name == "whitinola") || (col.gameObject.name == "Blakinola"))
         {
-            p = player.GetComponent<PlayerHealth>();
+            p = col.gameObject.GetComponent<PlayerHealth>();
             p.TakeDamage(20);
 			Destroy(gameObject, 0);
 			PlayerManager.Instance.AddHealth(0, -20);
         }
         if (col.gameObject.name == "Enemy")
         {
-            e = player.GetComponent<EnemyHealth>();
+            e = col.gameObject.GetComponent<EnemyHealth>();
             e.TakeDamage(20);
 			Destroy(gameObject, 0);
         }
