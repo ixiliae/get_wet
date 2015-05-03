@@ -8,7 +8,7 @@ public class SpellQbis : MonoBehaviour {
 	private GameObject player;
 	PlayerHealth p;
 	EnemyHealth e;
-	
+    public int damages;
 	
 	// Update is called once per frame
 	void Update () {
@@ -23,12 +23,12 @@ public class SpellQbis : MonoBehaviour {
 		
 	
 			p = player.GetComponent<PlayerHealth>();
-			p.TakeDamage(100);
+			p.TakeDamage(damages);
 		
 		if (col.gameObject.name == "Enemy")
 		{
 			e = player.GetComponent<EnemyHealth>();
-			e.TakeDamage(100);
+			e.TakeDamage(damages);
 		}
 		
 	}
