@@ -21,11 +21,10 @@ public class SpellQbis : MonoBehaviour {
 	{
 		player = col.gameObject;
 		
-		if (col.gameObject.name == "baseMale 1 1")
-		{
+	
 			p = player.GetComponent<PlayerHealth>();
 			p.TakeDamage(100);
-		}
+		
 		if (col.gameObject.name == "Enemy")
 		{
 			e = player.GetComponent<EnemyHealth>();

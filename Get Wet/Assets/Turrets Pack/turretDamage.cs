@@ -20,13 +20,12 @@ public class turretDamage : MonoBehaviour {
 	void OnTriggerEnter(Collider col)
 	{
 		player = col.gameObject;
-		if ((col.gameObject.name == "whitinola") || (col.gameObject.name == "Blackinola"))
-		{
+		
 			p = player.GetComponent<PlayerHealth>();
 			p.TakeDamage(1);
 			Destroy(gameObject, 0);
 			PlayerManager.Instance.AddHealth(0, -1);
-		}
+		
 		if (col.gameObject.name == "Enemy")
 		{
 			e = player.GetComponent<EnemyHealth>();
