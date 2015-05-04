@@ -58,6 +58,7 @@
         {
             // The enemy is dead.
             isDead = true;
+            //PlayerManager.Instance.AddKills(0, 1);
 			StartSinking ();
 			
         }

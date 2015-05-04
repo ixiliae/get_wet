@@ -34,12 +34,11 @@ public class explosion : MonoBehaviour {
 			Destroy(gameObject, 0);
 			PlayerManager.Instance.AddHealth(0, -damages);
 
-		if (col.gameObject.name == "Enemy")
-		{
+
 			e = col.gameObject.GetComponent<EnemyHealth>();
 			e.TakeDamage(damages);
 			Destroy(gameObject, 0);
-		}
+		
 		
 	}
 

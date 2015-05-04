@@ -26,12 +26,11 @@ public class Deletion : MonoBehaviour {
 			Destroy(gameObject, 0);
 			PlayerManager.Instance.AddHealth(0, -20);
         
-        if (col.gameObject.name == "Enemy")
-        {
+
             e = col.gameObject.GetComponent<EnemyHealth>();
             e.TakeDamage(20);
 			Destroy(gameObject, 0);
-        }
+        
        
     }
 }

@@ -13,11 +13,13 @@ public class IAnav : MonoBehaviour
 	public Transform waypoint2;
 	public Transform waypoint3;
 	int w;
-	Vector3[] waypoints;
-	// Use this for initialization
+    int currentWaypoint;
+    Vector3[] waypoints;
+    
+
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");		
-		waypoints = new Vector3[] {waypoint1.position, waypoint2.position ,waypoint3.position};
+	    waypoints = new Vector3[] {waypoint1.position, waypoint2.position ,waypoint3.position};
 		NavMeshAgent agent = GetComponent<NavMeshAgent>();
 		agent.destination = waypoints[0]; 
 		transform.FindChild ("baseMale").GetComponent<Animation>().Play ("walk");

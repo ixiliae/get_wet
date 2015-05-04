@@ -23,13 +23,12 @@ public class SpellQbis : MonoBehaviour {
 		
 	
 			p = player.GetComponent<PlayerHealth>();
-			p.TakeDamage(damages);
+			p.TakeDamage(1000);
 		
-		if (col.gameObject.name == "Enemy")
-		{
+
 			e = player.GetComponent<EnemyHealth>();
-			e.TakeDamage(damages);
-		}
+			e.TakeDamage(1000);
+		
 		
 	}
 }
