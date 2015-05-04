@@ -38,12 +38,12 @@ public class MakeSpawn : MonoBehaviour {
 		{
 			if (SavedChar <= 1) 
 			{
-				Rigidbody instantiatedChar = Instantiate (WhiteBa, new Vector3(755, 19, 557), new Quaternion(0,0,0,0)) as Rigidbody;
+                Rigidbody instantiatedChar = Instantiate(WhiteBa, new Vector3(867.3768f, 20.6454f, 980.1852f), new Quaternion(0, 0, 0, 0)) as Rigidbody;
 			}
 
 			if (SavedChar == 2) 
 			{
-				Rigidbody instantiatedChar = Instantiate (WhiteGr, new Vector3(755, 19, 557), new Quaternion(0,0,0,0)) as Rigidbody;
+                Rigidbody instantiatedChar = Instantiate(WhiteGr, new Vector3(378.6492f, 35.28006f, 544.9284f), new Quaternion(0, 0, 0, 0)) as Rigidbody;
 			}
 
 		}
@@ -52,7 +52,7 @@ public class MakeSpawn : MonoBehaviour {
 		{
 			if (SavedChar == 1) 
 			{
-				Rigidbody instantiatedChar = Instantiate (BlackBa, new Vector3(755, 19, 557), new Quaternion(0,0,0,0)) as Rigidbody;
+                Rigidbody instantiatedChar = Instantiate(BlackBa, new Vector3(577.2406f, 20.8276f, 65.2534f), new Quaternion(0, 0, 0, 0)) as Rigidbody;
 			}
 
 			if (SavedChar == 2) 

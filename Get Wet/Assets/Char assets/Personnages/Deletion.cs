@@ -24,7 +24,7 @@ public class Deletion : MonoBehaviour {
             p = col.gameObject.GetComponent<PlayerHealth>();
             p.TakeDamage(20);
 			Destroy(gameObject, 0);
-			PlayerManager.Instance.AddHealth(0, -20);
+			
         
 
             e = col.gameObject.GetComponent<EnemyHealth>();

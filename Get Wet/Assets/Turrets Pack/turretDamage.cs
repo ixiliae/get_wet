@@ -24,7 +24,6 @@ public class turretDamage : MonoBehaviour {
 			p = player.GetComponent<PlayerHealth>();
 			p.TakeDamage(1);
 			Destroy(gameObject, 0);
-			PlayerManager.Instance.AddHealth(0, -1);
 		
 		if (col.gameObject.name == "Enemy")
 		{

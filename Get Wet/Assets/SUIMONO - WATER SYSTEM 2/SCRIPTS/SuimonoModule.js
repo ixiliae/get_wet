@@ -293,13 +293,15 @@ function Start(){
 	//set camera
 	if (setCamera == null){
 		if (Camera.main != null){
-			setCamera = Camera.main.transform;
+		    setCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
+		    //Camera.main.transform;
 		}
 	}
 	
 	//set track object
 	if (setTrack == null && setCamera != null){
-		setTrack = setCamera.transform;
+	    setTrack = GameObject.FindGameObjectWithTag("Player").transform;
+	    //setCamera.transform;
 	}
 	
 

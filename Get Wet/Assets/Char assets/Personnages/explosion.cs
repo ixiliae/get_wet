@@ -32,7 +32,7 @@ public class explosion : MonoBehaviour {
 			p = col.gameObject.GetComponent<PlayerHealth>();
 			p.TakeDamage(damages);
 			Destroy(gameObject, 0);
-			PlayerManager.Instance.AddHealth(0, -damages);
+			
 
 
 			e = col.gameObject.GetComponent<EnemyHealth>();

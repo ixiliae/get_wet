@@ -24,6 +24,11 @@ public class PlayerHealth : MonoBehaviour
     {
         // Reset the damaged flag.
         damaged = false;
+        if (Input.GetButtonDown("Die"))
+        {
+            TakeDamage(100);
+            PlayerManager.Instance.AddHealth(0, -100);
+        }
     }
 
     void OnTriggerEnter(Collider col)
@@ -41,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
 
         // Reduce the current health by the damage amount.
         currentHealth -= amount;
+        PlayerManager.Instance.AddHealth(0, -amount);
 
         // Set the health bar's value to the current health.
         //healthSlider.value = currentHealth;
@@ -67,6 +73,7 @@ public class PlayerHealth : MonoBehaviour
 
         // Tell the animator that the player is dead.
         transform.gameObject.GetComponent<Animation>().Play("tPose");
+        PlayerManager.Instance.AddDeaths(0, 1);
 
         // Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
     }
