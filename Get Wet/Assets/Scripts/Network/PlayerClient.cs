@@ -14,23 +14,21 @@ public class PlayerClient : MonoBehaviour
     [RPC]
     void PlayAnimation(string anim)
     {
-        GetComponent<Animation>().Play(anim);
+
+             GetComponent<Animation>().Play(anim);
     }
 
     [RPC]
-    void UseActive()
+    void Shoot()
     {
         shoot.PrimaryWeapon();
+        Debug.Log("shot received");
     }
     [RPC]
-    void UseActive2()
+    void Shoot2()
     {
         shoot.SecondaryWeapon();
     }
-    [RPC]
-    void Die()
-    {
-        hp.Death();
-    }
+
 
 }

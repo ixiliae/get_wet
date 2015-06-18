@@ -923,6 +923,7 @@ GameObject:
   - 4: {fileID: 439526}
   - 82: {fileID: 8202954}
   - 114: {fileID: 11417390}
+  - 148: {fileID: 14809764}
   m_Layer: 0
   m_Name: Spawnpoint
   m_TagString: Untagged
@@ -2182,6 +2183,7 @@ MonoBehaviour:
   ammo2: 10
   projectile2: {fileID: 5426768, guid: f3eba8f86adc2494c859e52cb0ed7926, type: 2}
   cooldown: .200000003
+  net: {fileID: 14815012}
 --- !u!114 &11424660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2355,6 +2357,18 @@ CharacterController:
   m_SkinWidth: .0799999982
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: .899999976, z: 0}
+--- !u!148 &14809764
+NetworkView:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189978}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 439526}
+  m_ViewID:
+    m_ID: 0
+    m_Type: 0
 --- !u!148 &14815012
 NetworkView:
   m_ObjectHideFlags: 1

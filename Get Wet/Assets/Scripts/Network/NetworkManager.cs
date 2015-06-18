@@ -52,7 +52,6 @@ public class NetworkManager : MonoBehaviour
 
         
         WoWcamera cam =Instantiate<GameObject>(mainCam).GetComponent<WoWcamera>();
-        
         cam.target = player.transform;
         cam.here = mainCam.GetComponent<Camera>();
         cam.weapon = player.transform.Find("Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01 R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/bazooka");

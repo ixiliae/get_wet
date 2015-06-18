@@ -78,10 +78,7 @@ public class PlayerHealth : MonoBehaviour
         // Tell the animator that the player is dead.
         transform.gameObject.GetComponent<Animation>().Play("tPose");
         PlayerManager.Instance.AddDeaths(0, 1);
-        if (net != null)
-            net.RPC("PlayAnimation", RPCMode.Others, "tPose");
-        if (net != null)
-            net.RPC("Die", RPCMode.Others);
+
 
         // Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
     }

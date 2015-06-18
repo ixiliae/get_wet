@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
                 anim = "idle";
 
             GetComponent<Animation>().Play(anim);
-            if (net != null)
+           if (net != null)
                 net.RPC("PlayAnimation", RPCMode.Others, anim);
             moveDirection.y -= gravity * Time.deltaTime;
             controller.Move(moveDirection * Time.deltaTime);
