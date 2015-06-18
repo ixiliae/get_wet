@@ -3,14 +3,22 @@ using System.Collections;
 
 public class Scope : State {
 
+	public void BackToInferface()
+	{
+		m_UIManager.ChangeState (m_UIManager.InterfaceName);
+	}
+
+
+
+
+
 	// Use this for initialization
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown (KeyCode.L))
+
+	public override void OnUpdate () {
+		if (Input.GetKeyDown (KeyCode.Mouse1))
 		{
 			m_UIManager.ChangeState (m_UIManager.InterfaceName);
 		}

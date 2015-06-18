@@ -29,7 +29,7 @@ public class InGame : State {
 
 	public void QuitTheGame()
 	{
-		m_UIManager.ChangeState (m_UIManager.MainMenuName);
+		m_UIManager.ChangeState (m_UIManager.LoadingScreen1Name);
 		Time.timeScale = 1f;
 		Screen.lockCursor = false;
 		Cursor.visible = true;

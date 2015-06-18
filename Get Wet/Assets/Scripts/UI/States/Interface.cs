@@ -16,12 +16,16 @@ public class Interface : State {
 		Screen.lockCursor = true;
 		Cursor.visible = false;
 
-		if (Input.GetKeyDown (KeyCode.M))
+		if (Input.GetKeyDown (KeyCode.Mouse0))
+		{
+			m_UIManager.ChangeState (m_UIManager.InterfaceName);
+		}
+
+		if (Input.GetKeyDown (KeyCode.LeftShift))
 		{
 			m_UIManager.ChangeState (m_UIManager.ScopeName);
 		}
-
-
+		
 		if (Input.GetKeyDown (KeyCode.P))
 		{
 			Time.timeScale = 0f;
@@ -35,10 +39,10 @@ public class Interface : State {
 		}
 	}
 
-	void Awake() 
-	{
-		DontDestroyOnLoad(transform.gameObject);
-	}
+//	void Awake() 
+//	{
+//		DontDestroyOnLoad(transform.gameObject);
+//	}
 
 	public override void OnExit()
 	{

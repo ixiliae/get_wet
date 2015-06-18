@@ -1805,6 +1805,10 @@ Prefab:
       propertyPath: effectDistance
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
   m_IsPrefabParent: 0
@@ -2288,6 +2292,10 @@ Prefab:
     - target: {fileID: 100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
@@ -3982,6 +3990,10 @@ Prefab:
       propertyPath: effectDistance
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
   m_IsPrefabParent: 0
@@ -4357,6 +4369,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .605622947
       objectReference: {fileID: 0}
+    - target: {fileID: 8100000, guid: b493a5d859d24e943a80b420b49a7a54, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b493a5d859d24e943a80b420b49a7a54, type: 2}
   m_IsPrefabParent: 0
@@ -4609,6 +4625,10 @@ Prefab:
     - target: {fileID: 11400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: effectDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
@@ -8617,6 +8637,10 @@ Prefab:
       propertyPath: effectDistance
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
   m_IsPrefabParent: 0
@@ -9193,10 +9217,10 @@ MonoBehaviour:
   offamt2: 0
   offamt3: 0
   getRatio: 1
-  getScale: {x: .345799983, y: .345799983}
+  getScale: {x: 7.50400019, y: 7.50400019}
   setDynRef: 1
   outColor: {r: .730000019, g: 1, b: .939999998, a: 0}
-  outValue: 2.12599993
+  outValue: 1
   ckSpeed: 0
   alwaysEmit: 0
   addSize: 0
@@ -9209,11 +9233,11 @@ MonoBehaviour:
   collsetpos: {x: 0, y: 0, z: 0}
   sizeScale: 0
   soundVol: 0
-  retFloat: 2.12599993
+  retFloat: 1
   oceanUseScale: 5
   currentOceanMult: 1
-  thisRenderMaterial: {fileID: 1077360392}
-  scaleRenderMaterial: {fileID: 1539904959}
+  thisRenderMaterial: {fileID: 2100000, guid: 434999af31d77af4aacb107170c00ba3, type: 2}
+  scaleRenderMaterial: {fileID: 2100000, guid: df4f3b7f86753fe4dbd3dc92a60ce25e, type: 2}
   pixels_Surface: []
   pixels_Flow: []
   pixels_Wave: []
@@ -9806,6 +9830,10 @@ Prefab:
       propertyPath: effectDistance
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
   m_IsPrefabParent: 0
@@ -9871,383 +9899,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6145f5277aa3b347b110a4d0373bc84, type: 2}
   m_IsPrefabParent: 0
---- !u!21 &694794372
-Material:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Suimono2/water_pro
-  m_Shader: {fileID: 4800000, guid: 9ed362ebfacf77143ae81b88d472a055, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _ReflectionTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BlurRamp
-        second:
-          m_Texture: {fileID: 2800000, guid: e607ea0d8431dc64c8f345a02a1028e9, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Ramp2D
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveLargeTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 48e29dc2e9488474081bc20a42a364b9, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Surface1
-        second:
-          m_Texture: {fileID: 2800000, guid: 51323bc64857e644fac7400eb7305b36, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Surface2
-        second:
-          m_Texture: {fileID: 2800000, guid: 51323bc64857e644fac7400eb7305b36, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveRamp
-        second:
-          m_Texture: {fileID: 2800000, guid: 7d47d30a7e6fff544a72f826670ef31b, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _DepthRamp
-        second:
-          m_Texture: {fileID: 2800000, guid: aa1f666bea9a5b2409ff3dcfc008a57c, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FoamRamp
-        second:
-          m_Texture: {fileID: 2800000, guid: 01757909dcbf805408fe7867004a31a3, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FoamTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 14c55ed649175884784db6c178f4e654, type: 3}
-          m_Scale: {x: .767949998, y: .767949998}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _CubeTex
-        second:
-          m_Texture: {fileID: 8900000, guid: c27d2f9a7fe1df7448a59cd7e8306390, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _CubeBDRF
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 9e0b039b60bba5c4ea73849d69af386a, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FlowMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
-      data:
-        first:
-          name: _ReflDist
-        second: 200
-      data:
-        first:
-          name: _ReflBlend
-        second: .0149999997
-      data:
-        first:
-          name: _MasterScale
-        second: 2.25
-      data:
-        first:
-          name: _BlurSpread
-        second: 0
-      data:
-        first:
-          name: _RefrStrength
-        second: 0
-      data:
-        first:
-          name: _RefrSpeed
-        second: .5
-      data:
-        first:
-          name: _DepthAmt
-        second: 0
-      data:
-        first:
-          name: _UnderReflDist
-        second: -4.28000021
-      data:
-        first:
-          name: _Tess
-        second: 10
-      data:
-        first:
-          name: _minDist
-        second: -180
-      data:
-        first:
-          name: _maxDist
-        second: 80
-      data:
-        first:
-          name: _Displacement
-        second: 1
-      data:
-        first:
-          name: _MaskAmt
-        second: 1
-      data:
-        first:
-          name: _WaveHeight
-        second: .629999995
-      data:
-        first:
-          name: _DetailHeight
-        second: .629999995
-      data:
-        first:
-          name: _WaveShoreHeight
-        second: .112999998
-      data:
-        first:
-          name: _WaveScale
-        second: .25
-      data:
-        first:
-          name: _CenterHeight
-        second: 0
-      data:
-        first:
-          name: _MaxVariance
-        second: 3
-      data:
-        first:
-          name: _RefrScale
-        second: 2.25
-      data:
-        first:
-          name: _SpecScatterWidth
-        second: 10
-      data:
-        first:
-          name: _SpecScatterAmt
-        second: .5
-      data:
-        first:
-          name: _ReflBlur
-        second: .00999999978
-      data:
-        first:
-          name: _FoamHeight
-        second: 0
-      data:
-        first:
-          name: _HeightFoamAmount
-        second: 5
-      data:
-        first:
-          name: _HeightFoamSpread
-        second: 15
-      data:
-        first:
-          name: _FoamSpread
-        second: .0199999996
-      data:
-        first:
-          name: _EdgeBlend
-        second: 4.01599979
-      data:
-        first:
-          name: _EdgeSpread
-        second: 10
-      data:
-        first:
-          name: _BumpStrength
-        second: .280999988
-      data:
-        first:
-          name: _ReflectStrength
-        second: 100
-      data:
-        first:
-          name: _FlowScale
-        second: 0
-      data:
-        first:
-          name: _TideAmount
-        second: .300000012
-      data:
-        first:
-          name: _TideSpread
-        second: .513000011
-      data:
-        first:
-          name: _RimPower
-        second: 1
-      data:
-        first:
-          name: _castshadowEnabled
-        second: 1
-      data:
-        first:
-          name: _castshadowStrength
-        second: 1
-      data:
-        first:
-          name: _castshadowFade
-        second: 1
-      data:
-        first:
-          name: _suimono_uvx
-        second: 0
-      data:
-        first:
-          name: _suimono_uvy
-        second: 0
-      data:
-        first:
-          name: _suimono_uv2x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv2y
-        second: 0
-      data:
-        first:
-          name: _suimono_uv3x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv3y
-        second: 0
-      data:
-        first:
-          name: _suimono_uv4x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv4y
-        second: 0
-      data:
-        first:
-          name: _suimono_DeepWaveHeight
-        second: .944999993
-      data:
-        first:
-          name: _suimono_DetailHeight
-        second: .629999995
-      data:
-        first:
-          name: _suimono_detScale
-        second: .409999996
-      data:
-        first:
-          name: _useDynamicReflections
-        second: 0
-    m_Colors:
-      data:
-        first:
-          name: _DynReflColor
-        second: {r: 1, g: .25999999, b: 0, a: 1}
-      data:
-        first:
-          name: _DepthColor
-        second: {r: 1, g: .639999986, b: 0, a: 1}
-      data:
-        first:
-          name: _DepthColorR
-        second: {r: 1, g: 1, b: 1, a: 0}
-      data:
-        first:
-          name: _DepthColorG
-        second: {r: 1, g: 1, b: 1, a: 0}
-      data:
-        first:
-          name: _DepthColorB
-        second: {r: 1, g: .479999989, b: 0, a: 1}
-      data:
-        first:
-          name: _HighColor
-        second: {r: 1, g: .589999974, b: .370000005, a: 0}
-      data:
-        first:
-          name: _LowColor
-        second: {r: 0, g: 1, b: 0, a: .100000001}
-      data:
-        first:
-          name: _SpecColorH
-        second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _SpecColorL
-        second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _FoamColor
-        second: {r: .129999995, g: .0700000003, b: .0399999991, a: .829999983}
-      data:
-        first:
-          name: _EdgeColor
-        second: {r: .730000019, g: 1, b: .939999998, a: .360000014}
-      data:
-        first:
-          name: _UnderColor
-        second: {r: 1, g: .620000005, b: .170000002, a: 1}
-      data:
-        first:
-          name: _TideColor
-        second: {r: .239999995, g: .340000004, b: .319999993, a: 0}
-      data:
-        first:
-          name: _castshadowColor
-        second: {r: 0, g: 1, b: .790000021, a: .180000007}
 --- !u!1001 &694844938
 Prefab:
   m_ObjectHideFlags: 0
@@ -10364,6 +10015,10 @@ Prefab:
     - target: {fileID: 11400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: effectDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
@@ -10817,7 +10472,7 @@ Transform:
   - {fileID: 585443865}
   - {fileID: 1910350838}
   m_Father: {fileID: 1204251146}
-  m_RootOrder: 57
+  m_RootOrder: 49
 --- !u!4 &741740066 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 258e98375e0f19243ba7fdccc0c2fa25, type: 2}
@@ -10904,6 +10559,10 @@ Prefab:
     - target: {fileID: 11400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: typeIndex
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
@@ -14713,7 +14372,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400038, guid: 26e6c24df0fe21748b3405124e0da084, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 232.639999
+      value: 231.360001
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 26e6c24df0fe21748b3405124e0da084, type: 2}
       propertyPath: m_LocalPosition.y
@@ -14721,7 +14380,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 26e6c24df0fe21748b3405124e0da084, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 221.460007
+      value: 221.369995
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 26e6c24df0fe21748b3405124e0da084, type: 2}
       propertyPath: m_LocalRotation.x
@@ -14896,6 +14555,10 @@ Prefab:
     - target: {fileID: 11400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: typeIndex
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
@@ -15745,7 +15408,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 1077360392}
+  - {fileID: 2100000, guid: 434999af31d77af4aacb107170c00ba3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -15970,6 +15633,10 @@ Prefab:
     - target: {fileID: 11400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: effectDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
@@ -16802,383 +16469,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c81d395dc4cf3848a75715d03e6c909, type: 2}
   m_IsPrefabParent: 0
---- !u!21 &1077360392
-Material:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Suimono2/water_pro
-  m_Shader: {fileID: 4800000, guid: 9ed362ebfacf77143ae81b88d472a055, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _ReflectionTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BlurRamp
-        second:
-          m_Texture: {fileID: 2800000, guid: e607ea0d8431dc64c8f345a02a1028e9, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Ramp2D
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveLargeTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 48e29dc2e9488474081bc20a42a364b9, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Surface1
-        second:
-          m_Texture: {fileID: 2800000, guid: 51323bc64857e644fac7400eb7305b36, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Surface2
-        second:
-          m_Texture: {fileID: 2800000, guid: 51323bc64857e644fac7400eb7305b36, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveRamp
-        second:
-          m_Texture: {fileID: 2800000, guid: 7d47d30a7e6fff544a72f826670ef31b, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _DepthRamp
-        second:
-          m_Texture: {fileID: 2800000, guid: aa1f666bea9a5b2409ff3dcfc008a57c, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FoamRamp
-        second:
-          m_Texture: {fileID: 2800000, guid: 01757909dcbf805408fe7867004a31a3, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FoamTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 14c55ed649175884784db6c178f4e654, type: 3}
-          m_Scale: {x: .345799983, y: .345799983}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _CubeTex
-        second:
-          m_Texture: {fileID: 8900000, guid: c27d2f9a7fe1df7448a59cd7e8306390, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _CubeBDRF
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 9e0b039b60bba5c4ea73849d69af386a, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FlowMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
-      data:
-        first:
-          name: _ReflDist
-        second: 200
-      data:
-        first:
-          name: _ReflBlend
-        second: .0149999997
-      data:
-        first:
-          name: _MasterScale
-        second: 1.46200001
-      data:
-        first:
-          name: _BlurSpread
-        second: .731000006
-      data:
-        first:
-          name: _RefrStrength
-        second: 5
-      data:
-        first:
-          name: _RefrSpeed
-        second: .5
-      data:
-        first:
-          name: _DepthAmt
-        second: 14.3500004
-      data:
-        first:
-          name: _UnderReflDist
-        second: -3.38000011
-      data:
-        first:
-          name: _Tess
-        second: 15
-      data:
-        first:
-          name: _minDist
-        second: -180
-      data:
-        first:
-          name: _maxDist
-        second: 80
-      data:
-        first:
-          name: _Displacement
-        second: 1
-      data:
-        first:
-          name: _MaskAmt
-        second: 1
-      data:
-        first:
-          name: _WaveHeight
-        second: 0
-      data:
-        first:
-          name: _DetailHeight
-        second: .159999996
-      data:
-        first:
-          name: _WaveShoreHeight
-        second: 0
-      data:
-        first:
-          name: _WaveScale
-        second: .25
-      data:
-        first:
-          name: _CenterHeight
-        second: 0
-      data:
-        first:
-          name: _MaxVariance
-        second: 3
-      data:
-        first:
-          name: _RefrScale
-        second: 2.25
-      data:
-        first:
-          name: _SpecScatterWidth
-        second: 10
-      data:
-        first:
-          name: _SpecScatterAmt
-        second: .5
-      data:
-        first:
-          name: _ReflBlur
-        second: .00999999978
-      data:
-        first:
-          name: _FoamHeight
-        second: .375
-      data:
-        first:
-          name: _HeightFoamAmount
-        second: 0
-      data:
-        first:
-          name: _HeightFoamSpread
-        second: 15
-      data:
-        first:
-          name: _FoamSpread
-        second: .850000024
-      data:
-        first:
-          name: _EdgeBlend
-        second: 2.61599994
-      data:
-        first:
-          name: _EdgeSpread
-        second: 10
-      data:
-        first:
-          name: _BumpStrength
-        second: 0
-      data:
-        first:
-          name: _ReflectStrength
-        second: 100
-      data:
-        first:
-          name: _FlowScale
-        second: 0
-      data:
-        first:
-          name: _TideAmount
-        second: .300000012
-      data:
-        first:
-          name: _TideSpread
-        second: .513000011
-      data:
-        first:
-          name: _RimPower
-        second: 1
-      data:
-        first:
-          name: _castshadowEnabled
-        second: 1
-      data:
-        first:
-          name: _castshadowStrength
-        second: 1
-      data:
-        first:
-          name: _castshadowFade
-        second: 1
-      data:
-        first:
-          name: _suimono_uvx
-        second: 0
-      data:
-        first:
-          name: _suimono_uvy
-        second: 0
-      data:
-        first:
-          name: _suimono_uv2x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv2y
-        second: 0
-      data:
-        first:
-          name: _suimono_uv3x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv3y
-        second: 0
-      data:
-        first:
-          name: _suimono_uv4x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv4y
-        second: 0
-      data:
-        first:
-          name: _suimono_DeepWaveHeight
-        second: 0
-      data:
-        first:
-          name: _suimono_DetailHeight
-        second: .159999996
-      data:
-        first:
-          name: _suimono_detScale
-        second: 2.12599993
-      data:
-        first:
-          name: _useDynamicReflections
-        second: 1
-    m_Colors:
-      data:
-        first:
-          name: _DynReflColor
-        second: {r: .879999995, g: .930000007, b: .939999998, a: 1}
-      data:
-        first:
-          name: _DepthColor
-        second: {r: 1, g: .720000029, b: 0, a: .189999998}
-      data:
-        first:
-          name: _DepthColorR
-        second: {r: 1, g: 1, b: 1, a: 0}
-      data:
-        first:
-          name: _DepthColorG
-        second: {r: 1, g: 1, b: 1, a: 0}
-      data:
-        first:
-          name: _DepthColorB
-        second: {r: .360000014, g: .430000007, b: .289999992, a: 1}
-      data:
-        first:
-          name: _HighColor
-        second: {r: 0, g: 0, b: 0, a: .899999976}
-      data:
-        first:
-          name: _LowColor
-        second: {r: .340000004, g: .25999999, b: .180000007, a: .150000006}
-      data:
-        first:
-          name: _SpecColorH
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _SpecColorL
-        second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _FoamColor
-        second: {r: .920000017, g: 1, b: .99000001, a: .720000029}
-      data:
-        first:
-          name: _EdgeColor
-        second: {r: .730000019, g: 1, b: .939999998, a: .360000014}
-      data:
-        first:
-          name: _UnderColor
-        second: {r: .460000008, g: .910000026, b: 1, a: .629999995}
-      data:
-        first:
-          name: _TideColor
-        second: {r: .239999995, g: .340000004, b: .319999993, a: 0}
-      data:
-        first:
-          name: _castshadowColor
-        second: {r: 0, g: 1, b: .790000021, a: .180000007}
 --- !u!4 &1078539775 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400030, guid: f4e55e0e945141746aa777747c6b7775, type: 2}
@@ -18763,6 +18053,7 @@ Transform:
   - {fileID: 106886063}
   - {fileID: 1899313316}
   - {fileID: 1969542334}
+  - {fileID: 739751893}
   - {fileID: 1926190481}
   - {fileID: 657930586}
   - {fileID: 1740780697}
@@ -18771,7 +18062,6 @@ Transform:
   - {fileID: 972013266}
   - {fileID: 1371958714}
   - {fileID: 644189070}
-  - {fileID: 739751893}
   - {fileID: 890341231}
   - {fileID: 614812142}
   - {fileID: 50290310}
@@ -19025,6 +18315,10 @@ Prefab:
     - target: {fileID: 11400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: effectDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
@@ -19452,7 +18746,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 1352616680}
+  - {fileID: 2100000, guid: df4f3b7f86753fe4dbd3dc92a60ce25e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -19922,7 +19216,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 694794372}
+  - {fileID: 2100000, guid: 434999af31d77af4aacb107170c00ba3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -20041,6 +19335,10 @@ Prefab:
     - target: {fileID: 11400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: typeIndex
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
@@ -20733,6 +20031,10 @@ Prefab:
       propertyPath: effectDistance
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
   m_IsPrefabParent: 0
@@ -21108,387 +20410,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6145f5277aa3b347b110a4d0373bc84, type: 2}
   m_IsPrefabParent: 0
---- !u!21 &1352616680
-Material:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Suimono2/waterscale_pro
-  m_Shader: {fileID: 4800000, guid: 519565fb8e66dd84f98c12f69ac2683a, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _ReflectionTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BlurRamp
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Ramp2D
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveLargeTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Surface1
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Surface2
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveRamp
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _DepthRamp
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FoamRamp
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FoamTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: .264802188, y: .264802188}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _CubeTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _CubeBDRF
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FlowMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
-      data:
-        first:
-          name: _ReflDist
-        second: 1000
-      data:
-        first:
-          name: _ReflBlend
-        second: .00999999978
-      data:
-        first:
-          name: _MasterScale
-        second: 1
-      data:
-        first:
-          name: _BlurSpread
-        second: .00999999978
-      data:
-        first:
-          name: _RefrStrength
-        second: 25
-      data:
-        first:
-          name: _RefrSpeed
-        second: .5
-      data:
-        first:
-          name: _DepthAmt
-        second: .100000001
-      data:
-        first:
-          name: _UnderReflDist
-        second: 1
-      data:
-        first:
-          name: _Tess
-        second: 4
-      data:
-        first:
-          name: _minDist
-        second: 10
-      data:
-        first:
-          name: _maxDist
-        second: 25
-      data:
-        first:
-          name: _Displacement
-        second: .300000012
-      data:
-        first:
-          name: _MaskAmt
-        second: 1
-      data:
-        first:
-          name: _WaveHeight
-        second: 0
-      data:
-        first:
-          name: _DetailHeight
-        second: 0
-      data:
-        first:
-          name: _WaveShoreHeight
-        second: 0
-      data:
-        first:
-          name: _WaveScale
-        second: .25
-      data:
-        first:
-          name: _CenterHeight
-        second: 0
-      data:
-        first:
-          name: _MaxVariance
-        second: 3
-      data:
-        first:
-          name: _RefrScale
-        second: .5
-      data:
-        first:
-          name: _SpecScatterWidth
-        second: 2
-      data:
-        first:
-          name: _SpecScatterAmt
-        second: .0199999996
-      data:
-        first:
-          name: _ReflBlur
-        second: .00999999978
-      data:
-        first:
-          name: _FoamHeight
-        second: 5
-      data:
-        first:
-          name: _HeightFoamAmount
-        second: 1
-      data:
-        first:
-          name: _HeightFoamSpread
-        second: 2
-      data:
-        first:
-          name: _FoamSpread
-        second: .5
-      data:
-        first:
-          name: _EdgeBlend
-        second: 10
-      data:
-        first:
-          name: _EdgeSpread
-        second: 10
-      data:
-        first:
-          name: _BumpStrength
-        second: .899999976
-      data:
-        first:
-          name: _ReflectStrength
-        second: 1
-      data:
-        first:
-          name: _FlowScale
-        second: 0
-      data:
-        first:
-          name: _TideAmount
-        second: 1
-      data:
-        first:
-          name: _TideSpread
-        second: .400000006
-      data:
-        first:
-          name: _RimPower
-        second: 1
-      data:
-        first:
-          name: _castshadowEnabled
-        second: 1
-      data:
-        first:
-          name: _castshadowStrength
-        second: 1
-      data:
-        first:
-          name: _castshadowFade
-        second: 1
-      data:
-        first:
-          name: _suimono_uvx
-        second: 0
-      data:
-        first:
-          name: _suimono_uvy
-        second: 0
-      data:
-        first:
-          name: _suimono_uv2x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv2y
-        second: 0
-      data:
-        first:
-          name: _suimono_uv3x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv3y
-        second: 0
-      data:
-        first:
-          name: _suimono_uv4x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv4y
-        second: 0
-      data:
-        first:
-          name: _suimono_DeepWaveHeight
-        second: .944999993
-      data:
-        first:
-          name: _suimono_DetailHeight
-        second: .629999995
-      data:
-        first:
-          name: _suimono_detScale
-        second: .409999996
-      data:
-        first:
-          name: _useDynamicReflections
-        second: 0
-      data:
-        first:
-          name: suimonoDiffHeight
-        second: 1
-    m_Colors:
-      data:
-        first:
-          name: _DynReflColor
-        second: {r: 1, g: 1, b: 1, a: .5}
-      data:
-        first:
-          name: _DepthColor
-        second: {r: .25, g: .25, b: .5, a: 1}
-      data:
-        first:
-          name: _DepthColorR
-        second: {r: .25, g: .25, b: .5, a: 1}
-      data:
-        first:
-          name: _DepthColorG
-        second: {r: .25, g: .25, b: .5, a: 1}
-      data:
-        first:
-          name: _DepthColorB
-        second: {r: .25, g: .25, b: .5, a: 1}
-      data:
-        first:
-          name: _HighColor
-        second: {r: 1, g: 0, b: 0, a: 1}
-      data:
-        first:
-          name: _LowColor
-        second: {r: 0, g: 1, b: 0, a: .100000001}
-      data:
-        first:
-          name: _SpecColorH
-        second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _SpecColorL
-        second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _FoamColor
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _EdgeColor
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _UnderColor
-        second: {r: .25, g: .25, b: .5, a: 1}
-      data:
-        first:
-          name: _TideColor
-        second: {r: 0, g: 0, b: .200000003, a: 1}
-      data:
-        first:
-          name: _castshadowColor
-        second: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1001 &1354868952
 Prefab:
   m_ObjectHideFlags: 0
@@ -22317,10 +21238,10 @@ MonoBehaviour:
   offamt2: 0
   offamt3: 0
   getRatio: .344816953
-  getScale: {x: .767949998, y: .767949998}
+  getScale: {x: 7.50400019, y: 7.50400019}
   setDynRef: 0
   outColor: {r: .730000019, g: 1, b: .939999998, a: 0}
-  outValue: .409999996
+  outValue: 1
   ckSpeed: 0
   alwaysEmit: 0
   addSize: 0
@@ -22333,11 +21254,11 @@ MonoBehaviour:
   collsetpos: {x: 0, y: 0, z: 0}
   sizeScale: 0
   soundVol: 0
-  retFloat: .409999996
+  retFloat: 1
   oceanUseScale: 5
   currentOceanMult: 1
-  thisRenderMaterial: {fileID: 694794372}
-  scaleRenderMaterial: {fileID: 1352616680}
+  thisRenderMaterial: {fileID: 2100000, guid: 434999af31d77af4aacb107170c00ba3, type: 2}
+  scaleRenderMaterial: {fileID: 2100000, guid: df4f3b7f86753fe4dbd3dc92a60ce25e, type: 2}
   pixels_Surface: []
   pixels_Flow: []
   pixels_Wave: []
@@ -23325,6 +22246,10 @@ Prefab:
       propertyPath: typeIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
   m_IsPrefabParent: 0
@@ -23873,6 +22798,10 @@ Prefab:
       propertyPath: effectDistance
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
   m_IsPrefabParent: 0
@@ -24354,387 +23283,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b257ca2c3a39734fb4688ef7d06a9b9, type: 2}
   m_IsPrefabParent: 0
---- !u!21 &1539904959
-Material:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Suimono2/waterscale_pro
-  m_Shader: {fileID: 4800000, guid: 519565fb8e66dd84f98c12f69ac2683a, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _ReflectionTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BlurRamp
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Ramp2D
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveLargeTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Surface1
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Surface2
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveRamp
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _DepthRamp
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FoamRamp
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FoamTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: .345799983, y: .345799983}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _CubeTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _CubeBDRF
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveTex
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _FlowMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WaveMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
-      data:
-        first:
-          name: _ReflDist
-        second: 1000
-      data:
-        first:
-          name: _ReflBlend
-        second: .00999999978
-      data:
-        first:
-          name: _MasterScale
-        second: 1
-      data:
-        first:
-          name: _BlurSpread
-        second: .00999999978
-      data:
-        first:
-          name: _RefrStrength
-        second: 25
-      data:
-        first:
-          name: _RefrSpeed
-        second: .5
-      data:
-        first:
-          name: _DepthAmt
-        second: .100000001
-      data:
-        first:
-          name: _UnderReflDist
-        second: 1
-      data:
-        first:
-          name: _Tess
-        second: 4
-      data:
-        first:
-          name: _minDist
-        second: 10
-      data:
-        first:
-          name: _maxDist
-        second: 25
-      data:
-        first:
-          name: _Displacement
-        second: .300000012
-      data:
-        first:
-          name: _MaskAmt
-        second: 1
-      data:
-        first:
-          name: _WaveHeight
-        second: 0
-      data:
-        first:
-          name: _DetailHeight
-        second: 0
-      data:
-        first:
-          name: _WaveShoreHeight
-        second: 0
-      data:
-        first:
-          name: _WaveScale
-        second: .25
-      data:
-        first:
-          name: _CenterHeight
-        second: 0
-      data:
-        first:
-          name: _MaxVariance
-        second: 3
-      data:
-        first:
-          name: _RefrScale
-        second: .5
-      data:
-        first:
-          name: _SpecScatterWidth
-        second: 2
-      data:
-        first:
-          name: _SpecScatterAmt
-        second: .0199999996
-      data:
-        first:
-          name: _ReflBlur
-        second: .00999999978
-      data:
-        first:
-          name: _FoamHeight
-        second: 5
-      data:
-        first:
-          name: _HeightFoamAmount
-        second: 1
-      data:
-        first:
-          name: _HeightFoamSpread
-        second: 2
-      data:
-        first:
-          name: _FoamSpread
-        second: .5
-      data:
-        first:
-          name: _EdgeBlend
-        second: 10
-      data:
-        first:
-          name: _EdgeSpread
-        second: 10
-      data:
-        first:
-          name: _BumpStrength
-        second: .899999976
-      data:
-        first:
-          name: _ReflectStrength
-        second: 1
-      data:
-        first:
-          name: _FlowScale
-        second: 0
-      data:
-        first:
-          name: _TideAmount
-        second: 1
-      data:
-        first:
-          name: _TideSpread
-        second: .400000006
-      data:
-        first:
-          name: _RimPower
-        second: 1
-      data:
-        first:
-          name: _castshadowEnabled
-        second: 1
-      data:
-        first:
-          name: _castshadowStrength
-        second: 1
-      data:
-        first:
-          name: _castshadowFade
-        second: 1
-      data:
-        first:
-          name: _suimono_uvx
-        second: 0
-      data:
-        first:
-          name: _suimono_uvy
-        second: 0
-      data:
-        first:
-          name: _suimono_uv2x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv2y
-        second: 0
-      data:
-        first:
-          name: _suimono_uv3x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv3y
-        second: 0
-      data:
-        first:
-          name: _suimono_uv4x
-        second: 0
-      data:
-        first:
-          name: _suimono_uv4y
-        second: 0
-      data:
-        first:
-          name: _suimono_DeepWaveHeight
-        second: 0
-      data:
-        first:
-          name: _suimono_DetailHeight
-        second: .159999996
-      data:
-        first:
-          name: _suimono_detScale
-        second: 2.12599993
-      data:
-        first:
-          name: _useDynamicReflections
-        second: 1
-      data:
-        first:
-          name: suimonoDiffHeight
-        second: 1
-    m_Colors:
-      data:
-        first:
-          name: _DynReflColor
-        second: {r: 1, g: 1, b: 1, a: .5}
-      data:
-        first:
-          name: _DepthColor
-        second: {r: .25, g: .25, b: .5, a: 1}
-      data:
-        first:
-          name: _DepthColorR
-        second: {r: .25, g: .25, b: .5, a: 1}
-      data:
-        first:
-          name: _DepthColorG
-        second: {r: .25, g: .25, b: .5, a: 1}
-      data:
-        first:
-          name: _DepthColorB
-        second: {r: .25, g: .25, b: .5, a: 1}
-      data:
-        first:
-          name: _HighColor
-        second: {r: 1, g: 0, b: 0, a: 1}
-      data:
-        first:
-          name: _LowColor
-        second: {r: 0, g: 1, b: 0, a: .100000001}
-      data:
-        first:
-          name: _SpecColorH
-        second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _SpecColorL
-        second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _FoamColor
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _EdgeColor
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _UnderColor
-        second: {r: .25, g: .25, b: .5, a: 1}
-      data:
-        first:
-          name: _TideColor
-        second: {r: 0, g: 0, b: .200000003, a: 1}
-      data:
-        first:
-          name: _castshadowColor
-        second: {r: 0, g: 0, b: 0, a: 1}
 --- !u!4 &1544483564 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f06abd3d8dae923439b59fd4ccf64ab9, type: 2}
@@ -27499,7 +26047,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 1539904959}
+  - {fileID: 2100000, guid: df4f3b7f86753fe4dbd3dc92a60ce25e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -28054,6 +26602,10 @@ Prefab:
       propertyPath: effectDistance
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
   m_IsPrefabParent: 0
@@ -28198,19 +26750,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -.112778962
+      value: -.112778947
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .0868563503
+      value: .0868563429
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.603952944
+      value: -.603952885
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .784205258
+      value: .784205139
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: fxObject
@@ -28255,6 +26807,10 @@ Prefab:
     - target: {fileID: 100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
@@ -28508,6 +27064,10 @@ Prefab:
     - target: {fileID: 11400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: effectDistance
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
@@ -29114,6 +27674,10 @@ MonoBehaviour:
   GameOverName: GameOver
   CharacterSelectName: CharacterSelect
   ScoreTabName: ScoreTab
+  LoadingScreenName: LoadingScreen
+  LoadingScreen1Name: LoadingScreen1
+  ScopeName: Scope
+  WeaponSelectName: WeaponSelect
 --- !u!1001 &1896666924
 Prefab:
   m_ObjectHideFlags: 0
@@ -29649,6 +28213,103 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 15d6c8641c0f459499ba826a0c477e28, type: 2}
   m_PrefabInternal: {fileID: 1653605511}
+--- !u!1 &1919751250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1919751252}
+  - 82: {fileID: 1919751251}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1919751251
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1919751250}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2d04cb93ba7ade944bf8e17574f84830, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .252999991
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!4 &1919751252
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1919751250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 211.979996, y: 14.5799999, z: 239.339996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
 --- !u!4 &1921959165 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a4db1110a0f72914c8e725f2827115ce, type: 2}
@@ -31498,6 +30159,10 @@ Prefab:
     - target: {fileID: 11400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
       propertyPath: typeIndex
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}
+      propertyPath: m_RootOrder
+      value: 33
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3bd598c08d2ab642be49a2fa7c8f103, type: 2}

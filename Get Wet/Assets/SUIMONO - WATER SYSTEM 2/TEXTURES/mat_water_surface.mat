@@ -150,6 +150,18 @@ Material:
     m_Floats:
       data:
         first:
+          name: _RimPower
+        second: 1
+      data:
+        first:
+          name: _WaveScale
+        second: .605000019
+      data:
+        first:
+          name: _BumpStrength
+        second: .0979999974
+      data:
+        first:
           name: _ReflDist
         second: 200
       data:
@@ -214,10 +226,6 @@ Material:
         second: 0
       data:
         first:
-          name: _WaveScale
-        second: .605000019
-      data:
-        first:
           name: _CenterHeight
         second: 1
       data:
@@ -266,10 +274,6 @@ Material:
         second: .0199999996
       data:
         first:
-          name: _BumpStrength
-        second: .0979999974
-      data:
-        first:
           name: _ReflectStrength
         second: 17.7999992
       data:
@@ -284,10 +288,6 @@ Material:
         first:
           name: _TideSpread
         second: .513000011
-      data:
-        first:
-          name: _RimPower
-        second: 1
       data:
         first:
           name: _castshadowEnabled
@@ -354,22 +354,6 @@ Material:
         second: 1
       data:
         first:
-          name: _temp
-        second: 1
-      data:
-        first:
-          name: _ShoreAmt
-        second: -3.5
-      data:
-        first:
-          name: _ShoreAmtDk
-        second: 1
-      data:
-        first:
-          name: _UnderFogDist
-        second: -.0329999998
-      data:
-        first:
           name: _suimono_uv5x
         second: 0
       data:
@@ -394,6 +378,22 @@ Material:
         second: 0
       data:
         first:
+          name: _ShoreAmt
+        second: -3.5
+      data:
+        first:
+          name: _temp
+        second: 1
+      data:
+        first:
+          name: _ShoreAmtDk
+        second: 1
+      data:
+        first:
+          name: _UnderFogDist
+        second: -.0329999998
+      data:
+        first:
           name: _suimono_uv8x
         second: 1
       data:
@@ -405,6 +405,10 @@ Material:
         first:
           name: _Color
         second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _EdgeColor
+        second: {r: .730000019, g: 1, b: .939999998, a: 0}
       data:
         first:
           name: _DynReflColor
@@ -445,10 +449,6 @@ Material:
         first:
           name: _FoamColor
         second: {r: .99000001, g: .970000029, b: .930000007, a: 0}
-      data:
-        first:
-          name: _EdgeColor
-        second: {r: .730000019, g: 1, b: .939999998, a: 0}
       data:
         first:
           name: _UnderColor
