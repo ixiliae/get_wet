@@ -25,13 +25,23 @@ public class PlayerMovement : MonoBehaviour
             CharacterController controller = GetComponent<CharacterController>();
             if (controller.isGrounded)
             {
-                moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+                moveDirection = new Vector3(h, 0, v);
                 moveDirection = transform.TransformDirection(moveDirection);
                 moveDirection *= speed;
                 if (Input.GetButton("Jump"))
                     moveDirection.y = jumpSpeed;
 
             }
+            if (v > 0)
+                GetComponent<Animation>().Play("run");
+            else if (h > 0)
+                GetComponent<Animation>().Play("strafeRight");
+            else if (h < 0)
+                GetComponent<Animation>().Play("strafeLeft");
+            else if (Input.GetButton("Jump"))
+                GetComponent<Animation>().Play("jump");
+            else
+                GetComponent<Animation>().Play("idle");
             moveDirection.y -= gravity * Time.deltaTime;
             controller.Move(moveDirection * Time.deltaTime);
         }

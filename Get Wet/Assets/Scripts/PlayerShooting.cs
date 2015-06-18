@@ -12,6 +12,7 @@ public class PlayerShooting : MonoBehaviour
     float time = -1;
     float time2 = -1;
     PlayerManager playermanager;
+    public float cooldown = 0.2f;
     void Start()
     {
 
@@ -26,11 +27,12 @@ public class PlayerShooting : MonoBehaviour
 
     public void PrimaryWeapon()
     {
+
         if (time <= Time.timeSinceLevelLoad)
         {
             Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
             time = Time.timeSinceLevelLoad;
-            time = time + 0.2f;
+            time = time + cooldown;
             instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
             this.GetComponent<AudioSource>().Play();
             ammo = ammo - 1f;

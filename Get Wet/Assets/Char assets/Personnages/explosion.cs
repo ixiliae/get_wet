@@ -26,7 +26,7 @@ public class explosion : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider col)
 	{
-		Instantiate(prefab, col.transform.position, Quaternion.identity);
+		Instantiate(prefab, this.transform.position, Quaternion.identity);
 		Destroy (gameObject, 0);
 
 			p = col.gameObject.GetComponent<PlayerHealth>();
