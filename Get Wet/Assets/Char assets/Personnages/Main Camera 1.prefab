@@ -13,6 +13,7 @@ GameObject:
   - 124: {fileID: 12403370}
   - 81: {fileID: 8183618}
   - 114: {fileID: 11411368}
+  - 114: {fileID: 11465204}
   m_Layer: 0
   m_Name: Main Camera 1
   m_TagString: Player
@@ -92,6 +93,36 @@ MonoBehaviour:
   target: {fileID: 0}
   weapon: {fileID: 0}
   here: {fileID: 0}
+  targetHeight: 1.70000005
+  distance: 5
+  offsetFromWall: .100000001
+  maxDistance: 20
+  minDistance: .600000024
+  xSpeed: 200
+  ySpeed: 200
+  targetSpeed: 5
+  yMinLimit: -80
+  yMaxLimit: 80
+  zoomRate: 40
+  rotationDampening: 3
+  zoomDampening: 5
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &11465204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b519ce6b953534cbc3660f9c0f92e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  weapon: {fileID: 0}
+  here: {fileID: 2016350}
   targetHeight: 1.70000005
   distance: 5
   offsetFromWall: .100000001

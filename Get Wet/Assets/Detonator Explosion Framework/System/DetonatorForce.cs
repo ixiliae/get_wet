@@ -62,15 +62,26 @@ public class DetonatorForce : DetonatorComponent
 				}
 				
 				if (hit.GetComponent<Rigidbody>())
-				{
+                {
+
 					//align the force along the object's rotation
 					//this is wrong - need to attenuate the velocity according to distance from the explosion center			
 					//offsetting the explosion force position by the negative of the explosion's direction may help
+                    
+                    //DAMAGES
+                    PlayerHealth playerhealth = hit.GetComponent<PlayerHealth>();
+
+                    if (playerhealth != null)
+                    {
+                        
+                        if (Vector3.Distance(hit.transform.position, this.transform.position) < 5)
+                        playerhealth.TakeDamage(25);
+                    }
+
 					hit.GetComponent<Rigidbody>().AddExplosionForce((power * size), _explosionPosition, (radius * size), (4f * MyDetonator().upwardsBias * size));
-					
 					//fixed 6/15/2013 - didn't work before, was sending message to this script instead :)
 					hit.gameObject.SendMessage("OnDetonatorForceHit", null, SendMessageOptions.DontRequireReceiver);
-					
+
 					//and light them on fire for Rune
 					if (fireObject)
 					{

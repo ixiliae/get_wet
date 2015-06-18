@@ -13,10 +13,10 @@ public class PlayerShooting : MonoBehaviour
     float time2 = -1;
     PlayerManager playermanager;
     public float cooldown = 0.2f;
+    NetworkView net;
     void Start()
     {
-
-
+        net = GetComponent<NetworkView>();
     }
     // Update is called once per frame
     void Update()
@@ -36,6 +36,9 @@ public class PlayerShooting : MonoBehaviour
             instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
             this.GetComponent<AudioSource>().Play();
             ammo = ammo - 1f;
+            if (net != null)
+                net.RPC("UseActive", RPCMode.Others);
+
             //PlayerManager.Instance.AddAmmo(0, -1);
         }
         //PlayerManager.Instance.AddAmmo(0, -1);
@@ -50,6 +53,8 @@ public class PlayerShooting : MonoBehaviour
             instantiatedProjectile2.velocity = transform.TransformDirection(new Vector3(0, 0, speed2));
             this.GetComponent<AudioSource>().Play();
             ammo2 = ammo2 - 1f;
+            if (net != null)
+                net.RPC("UseActive2", RPCMode.Others);
             //PlayerManager.Instance.AddAmmo2(0, -1);
         }
         //PlayerManager.Instance.AddAmmo2(0, -1);
