@@ -16,6 +16,12 @@ public class Interface : State {
 		Screen.lockCursor = true;
 		Cursor.visible = false;
 
+		if (Input.GetKeyDown (KeyCode.M))
+		{
+			m_UIManager.ChangeState (m_UIManager.ScopeName);
+		}
+
+
 		if (Input.GetKeyDown (KeyCode.P))
 		{
 			Time.timeScale = 0f;

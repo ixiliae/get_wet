@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour {
 	public string CharacterSelectName = "CharacterSelect";
 	public string ScoreTabName = "ScoreTab";
 	public string LoadingScreenName = "LoadingScreen";
+	public string ScopeName = "Scope";
 	
 
 	// Use this for initialization
