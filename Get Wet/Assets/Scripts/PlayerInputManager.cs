@@ -6,6 +6,7 @@ public class PlayerInputManager : MonoBehaviour
 
     new NetworkView networkView;
     public PlayerMovement playerMovement;
+    public PlayerShooting pshoot;
 
     void Start()
     {
@@ -18,12 +19,17 @@ public class PlayerInputManager : MonoBehaviour
         float move_v = Input.GetAxis("Vertical");
 
 
-        if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
-            playerMovement.forward(move_v, move_h);
+   
+        playerMovement.move(move_h, move_v);
 
 
         if (Input.GetButton("Fire1"))
         {
+            pshoot.PrimaryWeapon();
+        }
+        if (Input.GetButton("Fire2"))
+        {
+            pshoot.SecondaryWeapon();
         }
      }
     }

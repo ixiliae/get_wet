@@ -168,7 +168,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5445958, guid: 5f274ea4fa016354bba63c1fc2d0fe7d, type: 2}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445958, guid: 5f274ea4fa016354bba63c1fc2d0fe7d, type: 2}
+      propertyPath: m_Drag
+      value: 500
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11499216, guid: 5f274ea4fa016354bba63c1fc2d0fe7d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5f274ea4fa016354bba63c1fc2d0fe7d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &979288451
@@ -317,3 +326,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 989642863}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1326396278 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 166196, guid: 5f274ea4fa016354bba63c1fc2d0fe7d, type: 2}
+  m_PrefabInternal: {fileID: 846013947}
+--- !u!114 &1326396283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1326396278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d6326f60b16e2e47a253e8e6e897f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  jumpSpeed: 10
+  gravity: 20
+--- !u!114 &1326396288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1326396278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1058327e69a4a544c9e918c294e748bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 1326396283}
