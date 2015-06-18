@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
                 moveDirection *= speed;
                 if (jump >0)
                     moveDirection.y = jumpSpeed;
-
+                
             }
             if (v > 0)
                 anim = "run";
