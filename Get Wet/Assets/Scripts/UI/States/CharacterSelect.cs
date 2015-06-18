@@ -25,7 +25,7 @@ public class CharacterSelect : State {
 	
 	public void PlayTheGame()
 	{
-		m_UIManager.ChangeState (m_UIManager.InterfaceName);
+		m_UIManager.ChangeState (m_UIManager.LoadingScreenName);
 	}
 
 	public void LoadLevel(string levelName)

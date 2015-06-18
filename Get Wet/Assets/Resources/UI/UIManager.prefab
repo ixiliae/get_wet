@@ -67,6 +67,7 @@ MonoBehaviour:
   GameOverName: GameOver
   CharacterSelectName: CharacterSelect
   ScoreTabName: ScoreTab
+  LoadingScreenName: LoadingScreen
 --- !u!114 &11466806
 MonoBehaviour:
   m_ObjectHideFlags: 1
