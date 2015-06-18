@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: mat2_multi_drop
-  m_Shader: {fileID: 4800000, guid: cad6e73994b0ff149a077f469773ee0a, type: 3}
+  m_Shader: {fileID: 4800000, guid: 14e3326e2bf7b2b4d81e50893a6f48af, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -38,12 +38,12 @@ Material:
     m_Floats:
       data:
         first:
-          name: _Overlay
-        second: .5
-      data:
-        first:
           name: _Strength
         second: 107.14286
+      data:
+        first:
+          name: _Overlay
+        second: .5
       data:
         first:
           name: _Brightness

@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: mat2_splash_ring_normal
-  m_Shader: {fileID: 4800000, guid: cad6e73994b0ff149a077f469773ee0a, type: 3}
+  m_Shader: {fileID: 4800000, guid: 14e3326e2bf7b2b4d81e50893a6f48af, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -30,6 +30,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 8a93a49a228d7444daa6e82961e28145, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _MaskMap
         second:
           m_Texture: {fileID: 2800000, guid: 623538f7f3a361a458f990578dd32787, type: 3}
@@ -42,18 +49,15 @@ Material:
           m_Texture: {fileID: 2800000, guid: 48b9f140a62a932478351b08d32771a2, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _ParallaxMap
-        second:
-          m_Texture: {fileID: 2800000, guid: 8a93a49a228d7444daa6e82961e28145, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Shininess
         second: .00999999978
+      data:
+        first:
+          name: _Parallax
+        second: .0799999982
       data:
         first:
           name: _Strength
@@ -70,10 +74,6 @@ Material:
         first:
           name: _Height
         second: 0
-      data:
-        first:
-          name: _Parallax
-        second: .0799999982
     m_Colors:
       data:
         first:

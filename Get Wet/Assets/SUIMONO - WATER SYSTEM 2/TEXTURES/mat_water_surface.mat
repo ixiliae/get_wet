@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: mat_water_surface
-  m_Shader: {fileID: 4800000, guid: 7de09a14c82804147a4ee5f395958716, type: 3}
+  m_Shader: {fileID: 4800000, guid: 9ed362ebfacf77143ae81b88d472a055, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -128,6 +128,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _OceanBlendTex
+        second:
+          m_Texture: {fileID: 2800000, guid: f3d1673758563c74b912659f95279b65, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _FoamOverlay
         second:
           m_Texture: {fileID: 2800000, guid: dd5f830482b013a43b967ea68de614d7, type: 3}
@@ -140,26 +147,7 @@ Material:
           m_Texture: {fileID: 8900000, guid: c27d2f9a7fe1df7448a59cd7e8306390, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _OceanBlendTex
-        second:
-          m_Texture: {fileID: 2800000, guid: f3d1673758563c74b912659f95279b65, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
-      data:
-        first:
-          name: _RimPower
-        second: 1
-      data:
-        first:
-          name: _WaveScale
-        second: .605000019
-      data:
-        first:
-          name: _BumpStrength
-        second: .261999995
       data:
         first:
           name: _ReflDist
@@ -199,11 +187,11 @@ Material:
       data:
         first:
           name: _Tess
-        second: 30
+        second: 20
       data:
         first:
           name: _minDist
-        second: -180
+        second: -34.2000008
       data:
         first:
           name: _maxDist
@@ -228,6 +216,10 @@ Material:
         first:
           name: _WaveShoreHeight
         second: 0
+      data:
+        first:
+          name: _WaveScale
+        second: .605000019
       data:
         first:
           name: _CenterHeight
@@ -278,6 +270,10 @@ Material:
         second: .0199999996
       data:
         first:
+          name: _BumpStrength
+        second: .261999995
+      data:
+        first:
           name: _ReflectStrength
         second: 55
       data:
@@ -292,6 +288,10 @@ Material:
         first:
           name: _TideSpread
         second: .513000011
+      data:
+        first:
+          name: _RimPower
+        second: 1
       data:
         first:
           name: _castshadowEnabled
@@ -358,18 +358,6 @@ Material:
         second: 1
       data:
         first:
-          name: _ShoreAmt
-        second: -3.5
-      data:
-        first:
-          name: _ShoreAmtDk
-        second: 1
-      data:
-        first:
-          name: _UnderFogDist
-        second: -.0309999995
-      data:
-        first:
           name: _suimono_uv5x
         second: 0
       data:
@@ -400,15 +388,23 @@ Material:
         first:
           name: _suimono_uv8y
         second: 1
+      data:
+        first:
+          name: _ShoreAmt
+        second: -3.5
+      data:
+        first:
+          name: _ShoreAmtDk
+        second: 1
+      data:
+        first:
+          name: _UnderFogDist
+        second: -.0309999995
     m_Colors:
       data:
         first:
           name: _Color
         second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _EdgeColor
-        second: {r: .730000019, g: 1, b: .939999998, a: 0}
       data:
         first:
           name: _DynReflColor
@@ -449,6 +445,10 @@ Material:
         first:
           name: _FoamColor
         second: {r: .870000005, g: .850000024, b: .819999993, a: 0}
+      data:
+        first:
+          name: _EdgeColor
+        second: {r: .730000019, g: 1, b: .939999998, a: 0}
       data:
         first:
           name: _UnderColor
