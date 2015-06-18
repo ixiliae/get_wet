@@ -18,6 +18,11 @@ public class MainMenu : State {
 
 	}
 
+	void Awake()
+	{
+		Time.timeScale = 1f;
+	}
+
 	public void GoToSelect()
 	{
 		m_UIManager.ChangeState (m_UIManager.CharacterSelectName);

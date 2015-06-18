@@ -5,12 +5,6 @@ public class State : MonoBehaviour {
 
 	public UIManager m_UIManager = null;
 
-	// Use this for initialization
-	void Start ()
-	{
-	
-	}
-
 	public virtual void OnEnter()
 	{
 		

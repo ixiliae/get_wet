@@ -128,13 +128,6 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _OceanBlendTex
-        second:
-          m_Texture: {fileID: 2800000, guid: f3d1673758563c74b912659f95279b65, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _FoamOverlay
         second:
           m_Texture: {fileID: 2800000, guid: dd5f830482b013a43b967ea68de614d7, type: 3}
@@ -145,6 +138,13 @@ Material:
           name: _CubeMobile
         second:
           m_Texture: {fileID: 8900000, guid: c27d2f9a7fe1df7448a59cd7e8306390, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OceanBlendTex
+        second:
+          m_Texture: {fileID: 2800000, guid: f3d1673758563c74b912659f95279b65, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -172,10 +172,6 @@ Material:
         first:
           name: _RefrSpeed
         second: 15.1999998
-      data:
-        first:
-          name: _AnimSpeed
-        second: 1
       data:
         first:
           name: _DepthAmt
@@ -354,8 +350,24 @@ Material:
         second: 1
       data:
         first:
+          name: _AnimSpeed
+        second: 1
+      data:
+        first:
           name: _temp
         second: 1
+      data:
+        first:
+          name: _ShoreAmt
+        second: -3.5
+      data:
+        first:
+          name: _ShoreAmtDk
+        second: 1
+      data:
+        first:
+          name: _UnderFogDist
+        second: -.0329999998
       data:
         first:
           name: _suimono_uv5x
@@ -388,18 +400,6 @@ Material:
         first:
           name: _suimono_uv8y
         second: 1
-      data:
-        first:
-          name: _ShoreAmt
-        second: -3.5
-      data:
-        first:
-          name: _ShoreAmtDk
-        second: 1
-      data:
-        first:
-          name: _UnderFogDist
-        second: -.0329999998
     m_Colors:
       data:
         first:
@@ -408,31 +408,31 @@ Material:
       data:
         first:
           name: _DynReflColor
-        second: {r: 1, g: 1, b: 1, a: .159999996}
+        second: {r: 1, g: 1, b: 1, a: .319999993}
       data:
         first:
           name: _DepthColor
-        second: {r: 0, g: .829999983, b: 1, a: 0}
+        second: {r: .300000012, g: 1, b: .769999981, a: .310000002}
       data:
         first:
           name: _DepthColorR
-        second: {r: 1, g: 1, b: 1, a: 0}
+        second: {r: .349999994, g: 1, b: .430000007, a: .540000021}
       data:
         first:
           name: _DepthColorG
-        second: {r: 1, g: 1, b: 1, a: 0}
+        second: {r: .349999994, g: 1, b: .810000002, a: .270000011}
       data:
         first:
           name: _DepthColorB
-        second: {r: .400000006, g: .419999987, b: .300000012, a: 1}
+        second: {r: .289999992, g: .589999974, b: .629999995, a: 1}
       data:
         first:
           name: _HighColor
-        second: {r: 1, g: 1, b: 1, a: 0}
+        second: {r: 1, g: .810000002, b: 0, a: .170000002}
       data:
         first:
           name: _LowColor
-        second: {r: 1, g: 1, b: 1, a: 0}
+        second: {r: 0, g: .879999995, b: 1, a: 0}
       data:
         first:
           name: _SpecColorH
@@ -440,7 +440,7 @@ Material:
       data:
         first:
           name: _SpecColorL
-        second: {r: .5, g: .5, b: .5, a: 1}
+        second: {r: .600000024, g: .980000019, b: 0, a: .519999981}
       data:
         first:
           name: _FoamColor

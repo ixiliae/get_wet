@@ -7,18 +7,18 @@ public class Spawner : MonoBehaviour {
 	public int SelectedSpawn = 0;
 	public int SelectedTeam = 1;
 
-	public void SelectTeam(int teamID)
+	public void SelectWeapon(int WeaponID)
 	{
-		SelectedTeam = teamID;
-		PlayerPrefs.SetInt ("SelectedTeam", (SelectedTeam));
-		Debug.Log ("Team Selected");
+		SelectedTeam = WeaponID;
+		PlayerPrefs.SetInt ("SelectedWeapon", (SelectedTeam));
+		Debug.Log ("Weapon Selected");
 	}
 
 	public void SelectCharacter(int characterID)
 	{
 		SelectedChar = characterID;
 		PlayerPrefs.SetInt ("SelectedCharacter", (SelectedChar));
-		Debug.Log ("Character Selected");
+		Debug.Log ("Character" + characterID + "Selected");
 	}	
 	
 //  	public void SelectPlace(int SpawnID)

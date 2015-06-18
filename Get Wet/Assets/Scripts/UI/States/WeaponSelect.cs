@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterSelect : State {
+public class WeaponSelect : State {
 
 	public override void OnEnter()
 	{
-		
+
 	}
 	
 	public override void OnUpdate()
@@ -15,22 +15,25 @@ public class CharacterSelect : State {
 	
 	public override void OnExit()
 	{
-	
+		
 	}
 
-	public void BackToMenu()
+	public void BackToCharacter()
 	{
-		m_UIManager.ChangeState (m_UIManager.MainMenuName);
+		m_UIManager.ChangeState (m_UIManager.CharacterSelectName);
 	}
 	
-	public void ChooseWeapon()
+	public void PlayTheGame()
 	{
-		m_UIManager.ChangeState (m_UIManager.WeaponSelectName);
+		m_UIManager.ChangeState (m_UIManager.LoadingScreenName);
 	}
-
+	
 	public void LoadLevel(string levelName)
 	{
 		Time.timeScale = 1f;
 		Application.LoadLevel (levelName);
 	}
 }
+
+
+

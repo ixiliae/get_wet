@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour {
 	public string ScoreTabName = "ScoreTab";
 	public string LoadingScreenName = "LoadingScreen";
 	public string ScopeName = "Scope";
+	public string WeaponSelectName = "WeaponSelect";
 	
 
 	// Use this for initialization
