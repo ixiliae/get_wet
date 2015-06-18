@@ -7,10 +7,16 @@ public class PlayerHealth : MonoBehaviour
     public int startingHealth = 100;                            // The amount of health the player starts the game with.
     public int currentHealth;                                   // The current health the player has.
     public Slider healthSlider;                                 // Reference to the UI's health bar.                                           
-    public bool isDead;                                                // Whether the player is dead.
+    public bool isDead;
+    NetworkView net;
+ 
     bool damaged;                                               // True when the player gets damaged.
 
-
+    void Start()
+    {
+        isDead = false;
+        net = GetComponent<NetworkView>();
+    }
     void Awake()
     {
         //playerAudio = GetComponent<AudioSource>();
@@ -22,13 +28,11 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
+        if (isDead)
+            Death();
         // Reset the damaged flag.
         damaged = false;
-        if (Input.GetButtonDown("Die"))
-        {
-            TakeDamage(100);
-            PlayerManager.Instance.AddHealth(0, -100);
-        }
+      
     }
 
     void OnTriggerEnter(Collider col)
@@ -63,17 +67,21 @@ public class PlayerHealth : MonoBehaviour
     }
 
 
-    void Death()
+    public void Death()
     {
         // Set the death flag so this function won't be called again.
         
 
         // Turn off any remaining shooting effects.
 
-
+        isDead = true;
         // Tell the animator that the player is dead.
         transform.gameObject.GetComponent<Animation>().Play("tPose");
         PlayerManager.Instance.AddDeaths(0, 1);
+        if (net != null)
+            net.RPC("PlayAnimation", RPCMode.Others, "tPose");
+        if (net != null)
+            net.RPC("Die", RPCMode.Others);
 
         // Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
     }

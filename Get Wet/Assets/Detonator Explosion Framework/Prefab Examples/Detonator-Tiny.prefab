@@ -127,7 +127,7 @@ MonoBehaviour:
   on: 1
   detonatorControlled: 1
   startSize: 1
-  size: 3.86511946
+  size: 1.86511898
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
@@ -136,7 +136,7 @@ MonoBehaviour:
   startDetail: 1
   detail: 1
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  color: {r: 0, g: .210414067, b: .976923048, a: 1}
+  color: {r: .281141847, g: .676679432, b: .95588237, a: 1}
   startLocalPosition: {x: 0, y: 0, z: 0}
   localPosition: {x: 0, y: 0, z: 0}
   startForce: {x: 0, y: 0, z: 0}
