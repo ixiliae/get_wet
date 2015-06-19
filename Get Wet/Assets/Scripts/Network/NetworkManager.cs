@@ -53,12 +53,12 @@ public class NetworkManager : MonoBehaviour
 
     void OnServerInitialized()
     {
-        SpawnPlayer(1, 5, 3);
+        SpawnPlayer(500, 27, 560);
     }
 
     void OnConnectedToServer()
     {
-        SpawnPlayer(3, 5, 1);
+        SpawnPlayer(490,27, 550);
     }
 
     void SpawnPlayer(float x, float y, float z)
