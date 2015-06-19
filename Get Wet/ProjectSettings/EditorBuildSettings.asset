@@ -7,11 +7,11 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/Scenes/test.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CreationUI.unity
   - enabled: 1
-    path: Assets/Scenes/newscenetestmap.unity
-  - enabled: 0
     path: Assets/Scenes/Menu Suimono.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/EmptySuimono.unity
+  - enabled: 1
+    path: Assets/Scenes/newscenetestmap.unity

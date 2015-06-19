@@ -24,9 +24,9 @@ public class NetworkManager : MonoBehaviour
     void Awake()
     {
         MasterServer.ipAddress = "127.0.0.1";
-       // SavedChar = PlayerPrefs.GetInt("SelectedCharacter");
-       // SavedSpawn = PlayerPrefs.GetInt("SelectedSpawn");
-       // SavedWeapon = PlayerPrefs.GetInt("SelectedWeapon");
+       SavedChar = PlayerPrefs.GetInt("SelectedCharacter");
+       SavedSpawn = PlayerPrefs.GetInt("SelectedSpawn");
+       SavedWeapon = PlayerPrefs.GetInt("SelectedWeapon");
     }
 
     void Start()
