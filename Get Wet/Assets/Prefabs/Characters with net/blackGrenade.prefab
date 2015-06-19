@@ -2231,7 +2231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5498824, guid: 9440c4e200431aa41976097091370fdf, type: 2}
   speed: 20
-  ammo: 10
+  ammo: 100
   speed2: 20
   ammo2: 10
   projectile2: {fileID: 5434534, guid: 121172ef1fbdd0b4cbcc8b428ed89230, type: 2}

@@ -5,7 +5,7 @@ public class PlayerShooting : MonoBehaviour
 {
     public Rigidbody projectile;
     public float speed = 20;
-    public float ammo = 10;
+    public float ammo = 100;
     public float speed2 = 20;
     public float ammo2 = 10;
     public Rigidbody projectile2;
@@ -51,21 +51,20 @@ public class PlayerShooting : MonoBehaviour
 
         if (time <= Time.timeSinceLevelLoad)
         {
-            
-            Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
-            time = Time.timeSinceLevelLoad;
-            time = time + cooldown;
-            instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
-            this.GetComponent<AudioSource>().Play();
-            ammo = ammo - 1f;
-
-            Debug.Log("au dessus du if");
-            if (net != null)
+            if (ammo > 0)
             {
-                net.RPC("PrimaryWeapon", RPCMode.Others);
-                Debug.Log("shot received");
-            }
+                Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
+                time = Time.timeSinceLevelLoad;
+                time = time + cooldown;
+                instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
+                this.GetComponent<AudioSource>().Play();
+                ammo = ammo - 1f;
 
+                if (net != null)
+                {
+                    net.RPC("PrimaryWeapon", RPCMode.Others);
+                }
+            }
             //PlayerManager.Instance.AddAmmo(0, -1);
         }
         //PlayerManager.Instance.AddAmmo(0, -1);
@@ -75,15 +74,18 @@ public class PlayerShooting : MonoBehaviour
     {
         if (time2 <= Time.timeSinceLevelLoad)
         {
-            Rigidbody instantiatedProjectile2 = Instantiate(projectile2, transform.position, transform.rotation) as Rigidbody;
-            time2 = Time.timeSinceLevelLoad;
-            time2 = time2 + 0.2f;
-            instantiatedProjectile2.velocity = transform.TransformDirection(new Vector3(0, 0, speed2));
-            this.GetComponent<AudioSource>().Play();
-            ammo2 = ammo2 - 1f;
-            if (net != null)
-                net.RPC("SecondaryWeapon", RPCMode.Others);
-            //PlayerManager.Instance.AddAmmo2(0, -1);
+            if (ammo2 > 0)
+            {
+                Rigidbody instantiatedProjectile2 = Instantiate(projectile2, transform.position, transform.rotation) as Rigidbody;
+                time2 = Time.timeSinceLevelLoad;
+                time2 = time2 + 0.2f;
+                instantiatedProjectile2.velocity = transform.TransformDirection(new Vector3(0, 0, speed2));
+                this.GetComponent<AudioSource>().Play();
+                ammo2 = ammo2 - 1f;
+                if (net != null)
+                    net.RPC("SecondaryWeapon", RPCMode.Others);
+                //PlayerManager.Instance.AddAmmo2(0, -1);
+            }
         }
         //PlayerManager.Instance.AddAmmo2(0, -1);
     }

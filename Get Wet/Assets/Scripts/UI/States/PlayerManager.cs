@@ -87,12 +87,22 @@ public class PlayerManager : MonoBehaviour
 
     public int GetHealth(int ID)
     {
-        return _players[ID].health;
+        GameObject cam = GameObject.Find("Main Camera 1(Clone)");
+        Transform player = cam.GetComponent<WoWcamera>().target;
+        PlayerHealth hp = player.gameObject.GetComponent<PlayerHealth>();
+
+        return hp.currentHealth;
+       // return _players[ID].health;
     }
 
     public float GetHealthLeftRatio(int ID)
     {
-        return (float)GetHealth(ID) / 100.0f;
+        GameObject cam = GameObject.Find("Main Camera 1(Clone)");
+        Transform player = cam.GetComponent<WoWcamera>().target;
+        PlayerHealth hp = player.gameObject.GetComponent<PlayerHealth>();
+        //return (float)GetHealth(ID) / 100.0f;
+
+        return (float)hp.currentHealth / 100.0f;
     }
 
 
@@ -108,12 +118,21 @@ public class PlayerManager : MonoBehaviour
 	
 			public int GetAmmo(int ID)                       
 			{
-				return _players[ID].ammo;                         
+                GameObject cam = GameObject.Find("Main Camera 1(Clone)");
+                Transform player = cam.GetComponent<WoWcamera>().target;
+                PlayerShooting ammomanager = player.gameObject.GetComponentInChildren<PlayerShooting>();
+                return (int)ammomanager.ammo;
+
+				//return _players[ID].ammo;                         
 			}
 
 			public float GetAmmoLeftRatio(int ID)
 			{
-				return (float)GetAmmo(ID) / 10.0f;
+                GameObject cam = GameObject.Find("Main Camera 1(Clone)");
+                Transform player = cam.GetComponent<WoWcamera>().target;
+                PlayerShooting ammomanager = player.gameObject.GetComponentInChildren<PlayerShooting>();
+                return ammomanager.ammo / 100f;
+				//return (float)GetAmmo(ID) / 10.0f;
 			}
 	
 	// // // // // // // //	// // // //	// // // // // //	
@@ -130,7 +149,12 @@ public class PlayerManager : MonoBehaviour
 			
 			public int GetAmmo2(int ID)                       
 			{
-				return _players[ID].ammo2;                         
+                GameObject cam = GameObject.Find("Main Camera 1(Clone)");
+                Transform player = cam.GetComponent<WoWcamera>().target;
+                PlayerShooting ammomanager = player.gameObject.GetComponentInChildren<PlayerShooting>();
+                return (int)ammomanager.ammo2;
+
+				//return _players[ID].ammo2;                         
 			}
 	
 	// // // // // // // //	// // // //	// // // // // //

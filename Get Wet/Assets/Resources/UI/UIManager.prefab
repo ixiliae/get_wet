@@ -68,6 +68,7 @@ MonoBehaviour:
   CharacterSelectName: CharacterSelect
   ScoreTabName: ScoreTab
   LoadingScreenName: LoadingScreen
+  LoadingScreen1Name: LoadingScreen1
   ScopeName: Scope
   WeaponSelectName: WeaponSelect
 --- !u!114 &11466806
