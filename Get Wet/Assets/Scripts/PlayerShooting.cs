@@ -25,6 +25,7 @@ public class PlayerShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (net.isMine)
         {
             Ray ray = here.ScreenPointToRay(new Vector3(Screen.height / 1.05f, Screen.width / 2.7f, 0));
@@ -35,11 +36,12 @@ public class PlayerShooting : MonoBehaviour
                 net.RPC("AimAt", RPCMode.Others, nbupdate, hit);
         }
 
+
     }
     [RPC]
     void AimAt(int nbupdate2, Vector3 point)
     {
-        if (nbupdate == nbupdate2)
+        //if (nbupdate == nbupdate2)
         transform.parent.parent.parent.parent.parent.LookAt(point);
 
     }
