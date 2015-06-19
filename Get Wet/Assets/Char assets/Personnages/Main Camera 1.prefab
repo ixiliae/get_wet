@@ -93,7 +93,7 @@ MonoBehaviour:
   target: {fileID: 0}
   weapon: {fileID: 0}
   here: {fileID: 0}
-  targetHeight: 1.70000005
+  targetHeight: 3
   distance: 5
   offsetFromWall: .100000001
   maxDistance: 20

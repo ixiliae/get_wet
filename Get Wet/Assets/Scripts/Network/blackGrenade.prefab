@@ -2195,7 +2195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  jumpSpeed: 16
+  jumpSpeed: 10
   gravity: 20
 --- !u!114 &11424772
 MonoBehaviour:
