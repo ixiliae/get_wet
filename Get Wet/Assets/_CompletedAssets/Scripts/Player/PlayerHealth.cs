@@ -50,6 +50,7 @@ public class PlayerHealth : MonoBehaviour
 
         // Reduce the current health by the damage amount.
         currentHealth -= amount;
+        if (net != null)
         PlayerManager.Instance.AddHealth(0, -amount);
 
         // Set the health bar's value to the current health.

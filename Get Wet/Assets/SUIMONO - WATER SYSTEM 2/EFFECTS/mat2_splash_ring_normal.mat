@@ -30,13 +30,6 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ParallaxMap
-        second:
-          m_Texture: {fileID: 2800000, guid: 8a93a49a228d7444daa6e82961e28145, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _MaskMap
         second:
           m_Texture: {fileID: 2800000, guid: 623538f7f3a361a458f990578dd32787, type: 3}
@@ -49,15 +42,18 @@ Material:
           m_Texture: {fileID: 2800000, guid: 48b9f140a62a932478351b08d32771a2, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 8a93a49a228d7444daa6e82961e28145, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Shininess
         second: .00999999978
-      data:
-        first:
-          name: _Parallax
-        second: .0799999982
       data:
         first:
           name: _Strength
@@ -74,6 +70,10 @@ Material:
         first:
           name: _Height
         second: 0
+      data:
+        first:
+          name: _Parallax
+        second: .0799999982
     m_Colors:
       data:
         first:

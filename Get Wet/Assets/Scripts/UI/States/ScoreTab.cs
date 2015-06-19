@@ -34,7 +34,18 @@ public class ScoreTab : State {
 		Screen.lockCursor = true;
 		Cursor.visible = false;
 	}
-	
+    public void QuitRespawn()
+    {
+        Debug.Log("QuitRespawn");
+        Time.timeScale = 1f;
+        GameObject cam = GameObject.Find("Main Camera 1(Clone)");
+        Transform todestroy = cam.GetComponent<WoWcamera>().target;
+        Destroy(todestroy.gameObject, 0);
+        Destroy(cam, 0);
+        NetworkManager netmanag = FindObjectOfType<NetworkManager>();
+        netmanag.SpawnPlayer(500, 27, 560);
+    
+    }
 	void LockCursor()
 	{
 		Screen.lockCursor = true;

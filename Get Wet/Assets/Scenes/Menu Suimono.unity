@@ -9102,7 +9102,7 @@ MonoBehaviour:
   shore_speed: {x: -0, y: -0}
   foam_speed: {x: -.0199999996, y: -.0199999996}
   tideColor: {r: .239999995, g: .340000004, b: .319999993, a: 0}
-  tideAmount: .300000012
+  tideAmount: .319999993
   tideSpread: .513000011
   castshadowIsOn: 0
   castshadowStrength: .552999973
@@ -10472,7 +10472,7 @@ Transform:
   - {fileID: 585443865}
   - {fileID: 1910350838}
   m_Father: {fileID: 1204251146}
-  m_RootOrder: 48
+  m_RootOrder: 46
 --- !u!4 &741740066 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 258e98375e0f19243ba7fdccc0c2fa25, type: 2}
@@ -11537,7 +11537,7 @@ MonoBehaviour:
   shore_speed: {x: -0, y: -0}
   foam_speed: {x: -.0199999996, y: -.0199999996}
   tideColor: {r: .239999995, g: .340000004, b: .319999993, a: 0}
-  tideAmount: .300000012
+  tideAmount: .100000001
   tideSpread: .513000011
   castshadowIsOn: 0
   castshadowStrength: .552999973
@@ -18050,9 +18050,9 @@ Transform:
   - {fileID: 1887947486}
   - {fileID: 183399423}
   - {fileID: 309379426}
+  - {fileID: 739751893}
   - {fileID: 106886063}
   - {fileID: 1899313316}
-  - {fileID: 739751893}
   - {fileID: 1969542334}
   - {fileID: 1926190481}
   - {fileID: 657930586}
@@ -21123,7 +21123,7 @@ MonoBehaviour:
   shore_speed: {x: -2, y: -8.74227766e-08}
   foam_speed: {x: -.0199999996, y: -.0199999996}
   tideColor: {r: .239999995, g: .340000004, b: .319999993, a: 0}
-  tideAmount: .300000012
+  tideAmount: .123000003
   tideSpread: .513000011
   castshadowIsOn: 0
   castshadowStrength: .552999973

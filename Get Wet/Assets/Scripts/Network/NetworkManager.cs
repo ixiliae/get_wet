@@ -61,7 +61,7 @@ public class NetworkManager : MonoBehaviour
         SpawnPlayer(490,27, 550);
     }
 
-    void SpawnPlayer(float x, float y, float z)
+    public void SpawnPlayer(float x, float y, float z)
     {
         //GameObject player = Network.Instantiate(playerPrefab, new Vector3(x, y, z), Quaternion.identity, 0) as GameObject;
         #region spawning
