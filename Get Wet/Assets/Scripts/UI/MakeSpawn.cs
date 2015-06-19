@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MakeSpawn : MonoBehaviour {
 
+
+
 	public GameObject WhiteBa = GameObject.Find("whiteBazooka");
 	public GameObject BlackBa = GameObject.Find("blackBazooka");
 	public GameObject WhiteGr = GameObject.Find("whiteGrenade");
@@ -93,20 +95,7 @@ public class MakeSpawn : MonoBehaviour {
 
 
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
 	// Use this for initialization
 	void Start () {

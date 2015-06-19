@@ -2375,12 +2375,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 3 / Character
+  m_Text: Player 3
 --- !u!114 &11414924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2427,12 +2427,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 2 / Character
+  m_Text: Player 2
 --- !u!114 &11418286
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2583,12 +2583,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 5 / Character
+  m_Text: Player 5
 --- !u!114 &11430378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3285,12 +3285,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 8 / Character
+  m_Text: Player 8
 --- !u!114 &11458004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3402,12 +3402,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 7 / Character
+  m_Text: Player 7
 --- !u!114 &11460874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3428,12 +3428,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 4 / Character
+  m_Text: Player 4
 --- !u!114 &11461796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3682,12 +3682,14 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 1 / Character
+  m_Text: 'Player 1
+
+'
 --- !u!114 &11477226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4153,12 +4155,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 6 / Character
+  m_Text: Player 6
 --- !u!114 &11492348
 MonoBehaviour:
   m_ObjectHideFlags: 1
