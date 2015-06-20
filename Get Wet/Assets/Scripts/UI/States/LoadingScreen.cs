@@ -4,13 +4,8 @@ using System.Collections;
 public class LoadingScreen : State {
 
 	float t;
-
-	public override void OnEnter()
-	{
-
-	}
-	
-	public override void OnUpdate()
+		
+	void Update()
 	{
 		t += Time.deltaTime;
 		if (t > 6.0f) {
@@ -18,8 +13,5 @@ public class LoadingScreen : State {
 		}
 	}
 	
-	public override void OnExit()
-	{
-	
-	}
+
 }

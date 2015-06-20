@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Interface : State {
 
-
+	public int Myflag;
 
 	public override void OnEnter()
 	{
@@ -15,6 +15,8 @@ public class Interface : State {
 	{
 		Screen.lockCursor = true;
 		Cursor.visible = false;
+
+		Myflag = PlayerPrefs.GetInt ("Flag");
 
 		if (Input.GetKeyDown (KeyCode.Mouse0))
 		{
@@ -38,17 +40,14 @@ public class Interface : State {
 			m_UIManager.ChangeState (m_UIManager.ScoreTabName);
 		}
 
-
+		if (Input.GetKeyDown (KeyCode.Equals))
+		{
+			Myflag = 0;
+			PlayerPrefs.SetInt("Flag",(Myflag));
+		}
 
 	}
 
-
-
-
-//	void Awake() 
-//	{
-//		DontDestroyOnLoad(transform.gameObject);
-//	}
 
 	public override void OnExit()
 	{
