@@ -124,7 +124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4c85abd0a4d974473b97e81d10a3a6bc, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c85abd0a4d974473b97e81d10a3a6bc, type: 3}
@@ -239,7 +239,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 468356, guid: a26627cbc62cf3c46bd023ce679cfde0, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a26627cbc62cf3c46bd023ce679cfde0, type: 2}
@@ -281,12 +281,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 486372, guid: 901e4349eaa690448a4697fe2313512a, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11476510, guid: 901e4349eaa690448a4697fe2313512a, type: 2}
       propertyPath: SavedChar
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11476510, guid: 901e4349eaa690448a4697fe2313512a, type: 2}
+      propertyPath: SavedWeapon
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476510, guid: 901e4349eaa690448a4697fe2313512a, type: 2}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 114852, guid: 97b0862a30920c048ad9ba6d0104dc42, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 901e4349eaa690448a4697fe2313512a, type: 2}
   m_IsPrefabParent: 0

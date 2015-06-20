@@ -19,15 +19,9 @@ public class SpellQbis : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider col)
 	{
-		player = col.gameObject;
-		
-	
+		    player = col.gameObject;
 			p = player.GetComponent<PlayerHealth>();
 			p.TakeDamage(100);
-		
-
-
-		
-		
+			
 	}
 }
