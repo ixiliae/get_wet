@@ -358,18 +358,6 @@ Material:
         second: -3.5
       data:
         first:
-          name: _temp
-        second: 1
-      data:
-        first:
-          name: _ShoreAmtDk
-        second: 1
-      data:
-        first:
-          name: _UnderFogDist
-        second: -.0329999998
-      data:
-        first:
           name: _suimono_uv5x
         second: 0
       data:
@@ -394,11 +382,23 @@ Material:
         second: 0
       data:
         first:
+          name: _temp
+        second: 1
+      data:
+        first:
           name: _suimono_uv8x
         second: 1
       data:
         first:
           name: _suimono_uv8y
+        second: 1
+      data:
+        first:
+          name: _UnderFogDist
+        second: -.0329999998
+      data:
+        first:
+          name: _ShoreAmtDk
         second: 1
     m_Colors:
       data:
@@ -408,7 +408,7 @@ Material:
       data:
         first:
           name: _EdgeColor
-        second: {r: .730000019, g: 1, b: .939999998, a: .360000014}
+        second: {r: .730000019, g: 1, b: .939999998, a: 0}
       data:
         first:
           name: _DynReflColor
@@ -448,7 +448,7 @@ Material:
       data:
         first:
           name: _FoamColor
-        second: {r: .99000001, g: .970000029, b: .930000007, a: 1}
+        second: {r: .99000001, g: .970000029, b: .930000007, a: 0}
       data:
         first:
           name: _UnderColor

@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: mat2_effect_refract
-  m_Shader: {fileID: 4800000, guid: e218d55e24fe4c3458c10f8793be8bee, type: 3}
+  m_Shader: {fileID: 4800000, guid: c7e2b516173a04c4d9a832201ff72ab1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -60,23 +60,19 @@ Material:
       data:
         first:
           name: _MasterScale
-        second: .430000007
+        second: 1
       data:
         first:
           name: _BlurSpread
-        second: .00499999989
+        second: .00999999978
       data:
         first:
           name: _RefrStrength
-        second: .280000001
+        second: 1
       data:
         first:
           name: _RefrSpeed
-        second: .189999998
-      data:
-        first:
-          name: _AnimSpeed
-        second: .189999998
+        second: 10
       data:
         first:
           name: _DepthAmt
@@ -84,15 +80,19 @@ Material:
       data:
         first:
           name: _UnderReflDist
-        second: .662
+        second: .100000001
+      data:
+        first:
+          name: _AnimSpeed
+        second: 10
       data:
         first:
           name: _underFogStart
-        second: .223000005
+        second: 1
       data:
         first:
           name: _underFogStretch
-        second: .00400000019
+        second: 1
       data:
         first:
           name: _suimonoHeight
@@ -117,7 +117,7 @@ Material:
       data:
         first:
           name: _DepthColorB
-        second: {r: .25999999, g: .340000004, b: .360000014, a: 1}
+        second: {r: .200000003, g: .200000003, b: 1, a: 1}
       data:
         first:
           name: _DiffuseColor

@@ -17,7 +17,6 @@ public class PlayerInputManager : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();  
         Debug.Log("Me is retarded as fuck");
         hp = GetComponent<PlayerHealth>();
-ww
     }
 
     void Update()

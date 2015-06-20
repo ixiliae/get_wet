@@ -355,12 +355,12 @@ Material:
         second: 1
       data:
         first:
-          name: _ShoreAmtDk
-        second: 1
-      data:
-        first:
           name: _UnderFogDist
         second: -.0309999995
+      data:
+        first:
+          name: _ShoreAmtDk
+        second: 1
       data:
         first:
           name: suimonoDiffHeight
