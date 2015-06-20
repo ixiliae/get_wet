@@ -12,13 +12,13 @@ public class RisingTide : MonoBehaviour {
 
 	public void SetActive()
 	{
-		if (MyTide == 1)		
+		if (MyTide != 1)		
 		{
-			gameObject.SetActive(true);
+			gameObject.SetActive(false);
 		}
 		else 
 		{
-			gameObject.SetActive (false);
+			gameObject.SetActive (true);
 		}
 	}
 }

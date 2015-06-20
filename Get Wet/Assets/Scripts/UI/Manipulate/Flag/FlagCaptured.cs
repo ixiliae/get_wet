@@ -12,13 +12,13 @@ public class FlagCaptured : MonoBehaviour {
 	
 	public void SetActive()
 	{
-		if (MyFLag == 1) 
+		if (MyFLag != 1) 
 		{
-			gameObject.SetActive (true);
+			gameObject.SetActive (false);
 		} 
 		else 
 		{
-			gameObject.SetActive (false);
+			gameObject.SetActive (true);
 		}
 	}
 }

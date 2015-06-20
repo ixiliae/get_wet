@@ -12,13 +12,13 @@ public class RedFlag : MonoBehaviour {
 	
 	public void SetActive()
 	{
-		if (MyFLag == 3)		
+		if (MyFLag != 3)		
 		{
-			gameObject.SetActive(true);
+			gameObject.SetActive(false);
 		}
 		else 
 		{
-			gameObject.SetActive (false);
+			gameObject.SetActive (true);
 		}
 	}
 }

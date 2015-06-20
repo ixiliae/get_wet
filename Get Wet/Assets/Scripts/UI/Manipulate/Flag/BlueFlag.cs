@@ -12,13 +12,13 @@ public class BlueFlag : MonoBehaviour {
 
 	public void SetActive()
 	{
-		if (MyFLag == 2)		
+		if (MyFLag != 2)		
 		{
-			gameObject.SetActive(true);
+			gameObject.SetActive(false);
 		}
 		else 
 		{
-			gameObject.SetActive (false);
+			gameObject.SetActive (true);
 		}
 	}
 }
