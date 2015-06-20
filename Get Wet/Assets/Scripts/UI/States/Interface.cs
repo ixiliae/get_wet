@@ -40,10 +40,16 @@ public class Interface : State {
 			m_UIManager.ChangeState (m_UIManager.ScoreTabName);
 		}
 
-		if (Input.GetKeyDown (KeyCode.Equals))
+		if (Input.GetKeyDown (KeyCode.Keypad1))
 		{
-			Myflag = 0;
-			PlayerPrefs.SetInt("Flag",(Myflag));
+			PlayerManager.Instance.AddKills(0, 1);
+			PlayerManager.Instance.AddDeaths(1, 1);
+		}
+
+		if (Input.GetKeyDown (KeyCode.Keypad2))
+	    {
+			PlayerManager.Instance.AddKills(1, 1);
+			PlayerManager.Instance.AddDeaths(0, 1);
 		}
 
 	}
