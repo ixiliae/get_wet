@@ -408,7 +408,7 @@ Material:
       data:
         first:
           name: _EdgeColor
-        second: {r: .730000019, g: 1, b: .939999998, a: .360000014}
+        second: {r: .730000019, g: 1, b: .939999998, a: 0}
       data:
         first:
           name: _DynReflColor
@@ -448,7 +448,7 @@ Material:
       data:
         first:
           name: _FoamColor
-        second: {r: .99000001, g: .970000029, b: .930000007, a: 1}
+        second: {r: .99000001, g: .970000029, b: .930000007, a: 0}
       data:
         first:
           name: _UnderColor
