@@ -3,7 +3,7 @@ using System.Collections;
 
 public class FlagCaptured : MonoBehaviour {
 
-	public int MyFLag;
+	public int MyFLag = 1;
 
 	void Update()
 	{

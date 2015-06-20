@@ -3,7 +3,7 @@ using System.Collections;
 
 public class RedFlag : MonoBehaviour {
 
-	public int MyFLag;
+	public int MyFLag = 3;
 	
 	void Update()
 	{

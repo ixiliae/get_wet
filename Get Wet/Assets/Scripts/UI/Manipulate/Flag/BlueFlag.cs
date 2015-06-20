@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BlueFlag : MonoBehaviour {
 
-	public int MyFLag;
+	public int MyFLag = 2;
 	
 	void Update()
 	{
@@ -12,7 +12,7 @@ public class BlueFlag : MonoBehaviour {
 
 	public void SetActive()
 	{
-		if (MyFLag != 2)		
+		if (PlayerPrefs.GetInt("Flag") != 2)		
 		{
 			gameObject.SetActive(false);
 		}
