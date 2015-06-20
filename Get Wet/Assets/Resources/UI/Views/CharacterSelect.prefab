@@ -429,8 +429,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedChar: 0
-  SelectedGameMode: 0
   SelectedWeapon: 1
+  SelectedTeam: 1
+  SelectedGameMode: 0
 --- !u!114 &11404900
 MonoBehaviour:
   m_ObjectHideFlags: 1

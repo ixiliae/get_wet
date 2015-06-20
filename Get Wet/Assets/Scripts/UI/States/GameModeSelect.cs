@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WeaponSelect : State {
+public class GameModeSelect : State {
 
 	public override void OnEnter()
 	{
-
+		
 	}
 	
 	public override void OnUpdate()
@@ -17,15 +17,15 @@ public class WeaponSelect : State {
 	{
 		
 	}
-
-	public void BackToCharacter()
-	{
-		m_UIManager.ChangeState (m_UIManager.CharacterSelectName);
-	}
 	
-	public void GoToTeam()
+	public void BackToTeam()
 	{
 		m_UIManager.ChangeState (m_UIManager.TeamSelectName);
+	}
+	
+	public void PlayTheGame()
+	{
+		m_UIManager.ChangeState (m_UIManager.LoadingScreenName);
 	}
 	
 	public void LoadLevel(string levelName)
@@ -33,8 +33,4 @@ public class WeaponSelect : State {
 		Time.timeScale = 1f;
 		Application.LoadLevel (levelName);
 	}
-
 }
-
-
-

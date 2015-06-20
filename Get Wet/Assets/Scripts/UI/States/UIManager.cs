@@ -16,6 +16,8 @@ public class UIManager : MonoBehaviour {
 	public string LoadingScreen1Name = "LoadingScreen1";
 	public string ScopeName = "Scope";
 	public string WeaponSelectName = "WeaponSelect";
+	public string TeamSelectName = "TeamSelect";
+	public string GameModeSelectName = "GameModeSelect";
 
 	public string MyIP;
 
