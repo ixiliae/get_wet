@@ -4,13 +4,13 @@ using System.Collections;
 public class Spawner : MonoBehaviour {
 	
 	public int SelectedChar = 1;
-	public int SelectedSpawn = 0;
-	public int SelectedTeam = 1;
+	public int SelectedGameMode = 0;
+	public int SelectedWeapon = 1;
 
 	public void SelectWeapon(int WeaponID)
 	{
-		SelectedTeam = WeaponID;
-		PlayerPrefs.SetInt ("SelectedWeapon", (SelectedTeam));
+		SelectedWeapon = WeaponID;
+		PlayerPrefs.SetInt ("SelectedWeapon", (SelectedWeapon));
 		Debug.Log ("Weapon Selected");
 	}
 
@@ -21,18 +21,12 @@ public class Spawner : MonoBehaviour {
 		Debug.Log ("Character" + characterID + "Selected");
 	}	
 	
-//  	public void SelectPlace(int SpawnID)
-//	{
-//		SelectedSpawn = SpawnID;
-//		PlayerPrefs.SetInt ("SelectedSpawn", (SelectedSpawn));
-//		Debug.Log ("Spawn Selected");
-//	}
-
-
-
-
-
-
+  	public void SelectGameMode(int GameModeID)
+	{
+		SelectedGameMode = GameModeID;
+		PlayerPrefs.SetInt ("SelectedGameMode", (SelectedGameMode));
+		Debug.Log ("Game Mode Selected");
+	}
 
 
 

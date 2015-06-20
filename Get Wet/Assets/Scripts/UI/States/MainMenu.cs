@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class MainMenu : State {
 
-	public string MyIP;
+	public string MyIP = "127.0.0.1";
 
 	public override void OnEnter()
 	{
