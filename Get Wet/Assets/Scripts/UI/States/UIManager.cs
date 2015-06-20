@@ -16,7 +16,9 @@ public class UIManager : MonoBehaviour {
 	public string LoadingScreen1Name = "LoadingScreen1";
 	public string ScopeName = "Scope";
 	public string WeaponSelectName = "WeaponSelect";
-	
+
+	public string MyIP;
+
 
 	// Use this for initialization
 	void Start () 

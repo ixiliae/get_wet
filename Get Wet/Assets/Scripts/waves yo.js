@@ -1,5 +1,6 @@
-﻿var scale = 10.0;
+﻿ var scale = 10.0;
  var speed = 1.0;
+
  private var baseHeight : Vector3[];
  
  function Update () {
@@ -18,3 +19,7 @@
          mesh.vertices = vertices;
          mesh.RecalculateNormals();
  }
+  
+  
+  
+ 

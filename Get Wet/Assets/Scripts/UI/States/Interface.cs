@@ -37,7 +37,13 @@ public class Interface : State {
 			Time.timeScale = 0f;
 			m_UIManager.ChangeState (m_UIManager.ScoreTabName);
 		}
+
+
+
 	}
+
+
+
 
 //	void Awake() 
 //	{
