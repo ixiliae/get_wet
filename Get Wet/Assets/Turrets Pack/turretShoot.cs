@@ -18,13 +18,13 @@ public class turretShoot : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Vector3.Distance (player.transform.position, transform.position) < 20) {
+		
 			transform.parent.LookAt(leader);
 			Transform instantiatedProjectile = Instantiate (projectile, transform.position, transform.rotation) as Transform;
-			instantiatedProjectile.Rotate(90,0,0);	
+			instantiatedProjectile.Rotate(90,0,0);
+            transform.Rotate(0, 150 * Time.deltaTime, 0);
 			
-			
-		}
+		
 		
 	}
 	
