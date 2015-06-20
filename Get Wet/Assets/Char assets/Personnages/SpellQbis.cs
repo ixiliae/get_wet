@@ -26,8 +26,7 @@ public class SpellQbis : MonoBehaviour {
 			p.TakeDamage(100);
 		
 
-			e = player.GetComponent<EnemyHealth>();
-			e.TakeDamage(100);
+
 		
 		
 	}

@@ -9,16 +9,15 @@ public class PlayerInputManager : MonoBehaviour
     PlayerShooting pshoot;
     PlayerHealth hp;
     Transform player;
-    GameObject cam;
+
     void Start()
     {
         networkView = GetComponent<NetworkView>();
         pshoot = GetComponentInChildren<PlayerShooting>();
-        playerMovement = GetComponent<PlayerMovement>();
-        GameObject cam = GameObject.Find("Main Camera 1(Clone)");
-        Transform player = cam.GetComponent<WoWcamera>().target;
-        hp = player.gameObject.GetComponent<PlayerHealth>();
-        
+        playerMovement = GetComponent<PlayerMovement>();  
+        Debug.Log("Me is retarded as fuck");
+        hp = GetComponent<PlayerHealth>();
+ww
     }
 
     void Update()
