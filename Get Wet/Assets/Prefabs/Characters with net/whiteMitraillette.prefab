@@ -2182,7 +2182,7 @@ MonoBehaviour:
   speed2: 50
   ammo2: 10
   projectile2: {fileID: 5434534, guid: 121172ef1fbdd0b4cbcc8b428ed89230, type: 2}
-  cooldown: .00999999978
+  cooldown: .0500000007
 --- !u!114 &11435140
 MonoBehaviour:
   m_ObjectHideFlags: 1

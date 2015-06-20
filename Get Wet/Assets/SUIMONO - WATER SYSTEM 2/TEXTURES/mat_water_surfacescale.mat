@@ -343,6 +343,10 @@ Material:
         second: 0
       data:
         first:
+          name: suimonoDiffHeight
+        second: 1
+      data:
+        first:
           name: _AnimSpeed
         second: 1
       data:
@@ -360,10 +364,6 @@ Material:
       data:
         first:
           name: _ShoreAmtDk
-        second: 1
-      data:
-        first:
-          name: suimonoDiffHeight
         second: 1
     m_Colors:
       data:
