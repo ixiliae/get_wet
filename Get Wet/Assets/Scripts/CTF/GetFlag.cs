@@ -7,6 +7,8 @@ public class GetFlag : MonoBehaviour {
     private GameObject flagStealer;
     Vector3 flagPos;
     public int flag=0;
+    public int MyRedScore = 0;
+    public int MyBlueScore = 0;
 	void Start () {
 	
 	}
@@ -33,12 +35,12 @@ public class GetFlag : MonoBehaviour {
             flagStealer = player.gameObject;
             flag = 1;
             PlayerPrefs.SetInt("Flag", (flag));
-            Debug.Log(PlayerPrefs.GetInt("Flag"));
+
         }
         if (player.transform.gameObject.tag == "BlueBase")
         {
-            flag = 2;
-            PlayerPrefs.SetInt("Flag", (flag));
+            MyBlueScore = MyBlueScore + 1;
+            PlayerPrefs.SetInt("MyBlueScore", (MyBlueScore));
             Debug.Log(PlayerPrefs.GetInt("Flag"));
             GameObject cube = GameObject.FindGameObjectWithTag("NetworkManager");
             NetworkManager n = cube.GetComponent<NetworkManager>();
@@ -52,9 +54,9 @@ public class GetFlag : MonoBehaviour {
         }
         if (player.transform.gameObject.tag == "RedBase")
         {
-            flag = 3;
-            PlayerPrefs.SetInt("Flag", (flag));
-            Debug.Log(PlayerPrefs.GetInt("Flag"));
+            MyRedScore = MyRedScore + 1;
+            PlayerPrefs.SetInt("MyRedScore", (MyRedScore));
+            
             GameObject cube = GameObject.FindGameObjectWithTag("NetworkManager");
             NetworkManager n = cube.GetComponent<NetworkManager>();
             n.SpawnFlag();
