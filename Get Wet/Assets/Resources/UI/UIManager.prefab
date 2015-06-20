@@ -71,6 +71,7 @@ MonoBehaviour:
   LoadingScreen1Name: LoadingScreen1
   ScopeName: Scope
   WeaponSelectName: WeaponSelect
+  MyIP: 127.0.0.1
 --- !u!114 &11466806
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -110,14 +110,14 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 675667979}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d5da8407a0493d24db4874cf053a4e7d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3448641313a3e8148892da9739061b84, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .363000005
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
