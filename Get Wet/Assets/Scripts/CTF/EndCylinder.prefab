@@ -28,7 +28,6 @@ GameObject:
   - 33: {fileID: 3397248}
   - 136: {fileID: 13655498}
   - 54: {fileID: 5447690}
-  - 114: {fileID: 11485552}
   m_Layer: 0
   m_Name: EndCylinder
   m_TagString: Finish
@@ -43,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 514.551331, y: 30, z: 527.070007}
+  m_LocalPosition: {x: 439.457184, y: 20.0000687, z: 717.674072}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 447096}
@@ -83,17 +82,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &11485552
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9bc9eef5f3b95348bf95cbce84c3b66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &13655498
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -281,10 +269,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4279242992
       minMaxState: 0
     startSize:
-      scalar: .200000003
+      scalar: .5
       maxCurve:
         serializedVersion: 2
         m_Curve:
