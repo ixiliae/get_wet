@@ -28,7 +28,11 @@ public class GetFlag : MonoBehaviour {
         if (player.transform.gameObject.tag == "Player")
              flagStealer = player.gameObject;
         if (player.transform.gameObject.tag == "Finish")
+        {
+            Network.Destroy(this.gameObject);
             Destroy(this.gameObject);
+            //PLACE INSTRUCTION HERE
+        }
 
              
     
