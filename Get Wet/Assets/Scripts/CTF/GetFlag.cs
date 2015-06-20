@@ -33,16 +33,19 @@ public class GetFlag : MonoBehaviour {
             flagStealer = player.gameObject;
             flag = 1;
             PlayerPrefs.SetInt("Flag", (flag));
+            Debug.Log(PlayerPrefs.GetInt("Flag"));
         }
         if (player.transform.gameObject.tag == "BlueBase")
         {
             flag = 2;
             PlayerPrefs.SetInt("Flag", (flag));
+            Debug.Log(PlayerPrefs.GetInt("Flag"));
             GameObject cube = GameObject.FindGameObjectWithTag("NetworkManager");
             NetworkManager n = cube.GetComponent<NetworkManager>();
             n.SpawnFlag();
             flag = 0;
             PlayerPrefs.SetInt("Flag", (flag));
+            Debug.Log(PlayerPrefs.GetInt("Flag"));
             Network.Destroy(this.gameObject);
             Destroy(this.gameObject);
             //PLACE INSTRUCTION HERE
@@ -51,12 +54,13 @@ public class GetFlag : MonoBehaviour {
         {
             flag = 3;
             PlayerPrefs.SetInt("Flag", (flag));
-
+            Debug.Log(PlayerPrefs.GetInt("Flag"));
             GameObject cube = GameObject.FindGameObjectWithTag("NetworkManager");
             NetworkManager n = cube.GetComponent<NetworkManager>();
             n.SpawnFlag();
             flag = 0;
             PlayerPrefs.SetInt("Flag", (flag));
+            Debug.Log(PlayerPrefs.GetInt("Flag"));
             Network.Destroy(this.gameObject);
             Destroy(this.gameObject);
 

@@ -48,7 +48,7 @@ public class MainMenu : State {
 	//}
 	
 	void OnGUI() {
-		MyIP = GUI.TextField(new Rect(565, 480, 100, 20),MyIP, 25);
+		MyIP = GUI.TextField(new Rect(530, 480, 100, 20),MyIP, 25);
 
 
 	}
