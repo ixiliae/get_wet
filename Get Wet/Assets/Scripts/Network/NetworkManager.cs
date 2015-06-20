@@ -20,6 +20,7 @@ public class NetworkManager : MonoBehaviour
     public int SavedChar = 1;
     public int SavedSpawn = 0;
     public int SavedWeapon = 1;
+    public int team = 0;
     GameObject player;
     GameObject objective;
     int ctf;
@@ -56,20 +57,32 @@ public class NetworkManager : MonoBehaviour
 
     void OnServerInitialized()
     {
+        team = PlayerPrefs.GetInt("SelectedTeam");
         SpawnFlag();
-        SpawnPlayer(427, 22, 703);
+        //BLUESPAWN
+        if (team == 1)
+            SpawnPlayer(427, 22, 703);
+        //REDSPAWN
+        if (team == 2)
+            SpawnPlayer(435, 22, 533);
     }
 
     void OnConnectedToServer()
     {
-        SpawnPlayer(435,22, 533);
+        team = PlayerPrefs.GetInt("SelectedTeam");
+        //REDSPAWN
+        if (team == 2)
+            SpawnPlayer(435,22, 533);
+        //BLUESPAWN
+        if (team == 1)
+            SpawnPlayer(427, 22, 703);
     }
 
     public void SpawnFlag()
     {
         ctf = PlayerPrefs.GetInt("SelectedGameMode");
         Debug.Log(ctf);
-        if (ctf == 1)
+        if (ctf == 2)
         {
             Debug.Log("Spawnflag");
             objective = Network.Instantiate(flag, new Vector3(389.3f, 28.2f, 654.3f), Quaternion.identity, 0) as GameObject;
