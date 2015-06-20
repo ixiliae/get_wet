@@ -64,7 +64,7 @@ Material:
       data:
         first:
           name: _BlurSpread
-        second: .00999999978
+        second: .00499999989
       data:
         first:
           name: _RefrStrength

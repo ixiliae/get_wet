@@ -6,6 +6,7 @@ public class GetFlag : MonoBehaviour {
 	// Use this for initialization
     private GameObject flagStealer;
     Vector3 flagPos;
+    public int flag=0;
 	void Start () {
 	
 	}
@@ -15,6 +16,8 @@ public class GetFlag : MonoBehaviour {
 
         if (flagStealer != null)
         {
+            transform.rotation = flagStealer.transform.rotation;
+            
             flagPos = flagStealer.transform.position;
             flagPos.y += 5f;
             transform.position = flagPos;
@@ -24,13 +27,39 @@ public class GetFlag : MonoBehaviour {
 
     void OnTriggerEnter(Collider player)
     {
-        
+
         if (player.transform.gameObject.tag == "Player")
-             flagStealer = player.gameObject;
-        if (player.transform.gameObject.tag == "Finish")
         {
+            flagStealer = player.gameObject;
+            flag = 1;
+            PlayerPrefs.SetInt("Flag", (flag));
+        }
+        if (player.transform.gameObject.tag == "BlueBase")
+        {
+            flag = 2;
+            PlayerPrefs.SetInt("Flag", (flag));
+            GameObject cube = GameObject.FindGameObjectWithTag("NetworkManager");
+            NetworkManager n = cube.GetComponent<NetworkManager>();
+            n.SpawnFlag();
+            flag = 0;
+            PlayerPrefs.SetInt("Flag", (flag));
             Network.Destroy(this.gameObject);
             Destroy(this.gameObject);
+            //PLACE INSTRUCTION HERE
+        }
+        if (player.transform.gameObject.tag == "RedBase")
+        {
+            flag = 3;
+            PlayerPrefs.SetInt("Flag", (flag));
+
+            GameObject cube = GameObject.FindGameObjectWithTag("NetworkManager");
+            NetworkManager n = cube.GetComponent<NetworkManager>();
+            n.SpawnFlag();
+            flag = 0;
+            PlayerPrefs.SetInt("Flag", (flag));
+            Network.Destroy(this.gameObject);
+            Destroy(this.gameObject);
+
             //PLACE INSTRUCTION HERE
         }
 

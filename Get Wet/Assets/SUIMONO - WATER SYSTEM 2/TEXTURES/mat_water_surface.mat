@@ -412,39 +412,39 @@ Material:
       data:
         first:
           name: _DynReflColor
-        second: {r: 1, g: 1, b: 1, a: .319999993}
+        second: {r: 1, g: .25999999, b: 0, a: 1}
       data:
         first:
           name: _DepthColor
-        second: {r: .300000012, g: 1, b: .769999981, a: .310000002}
+        second: {r: 1, g: .639999986, b: 0, a: 1}
       data:
         first:
           name: _DepthColorR
-        second: {r: .349999994, g: 1, b: .430000007, a: .540000021}
+        second: {r: 1, g: 1, b: 1, a: 0}
       data:
         first:
           name: _DepthColorG
-        second: {r: .349999994, g: 1, b: .810000002, a: .270000011}
+        second: {r: 1, g: 1, b: 1, a: 0}
       data:
         first:
           name: _DepthColorB
-        second: {r: .289999992, g: .589999974, b: .629999995, a: 1}
+        second: {r: 1, g: .479999989, b: 0, a: 1}
       data:
         first:
           name: _HighColor
-        second: {r: 1, g: .810000002, b: 0, a: .170000002}
+        second: {r: 1, g: .589999974, b: .370000005, a: 0}
       data:
         first:
           name: _LowColor
-        second: {r: 0, g: .879999995, b: 1, a: 0}
+        second: {r: 0, g: 1, b: 0, a: .100000001}
       data:
         first:
           name: _SpecColorH
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
           name: _SpecColorL
-        second: {r: .600000024, g: .980000019, b: 0, a: .519999981}
+        second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
           name: _FoamColor
@@ -452,7 +452,7 @@ Material:
       data:
         first:
           name: _UnderColor
-        second: {r: .460000008, g: .910000026, b: 1, a: .629999995}
+        second: {r: 1, g: .620000005, b: .170000002, a: 1}
       data:
         first:
           name: _TideColor

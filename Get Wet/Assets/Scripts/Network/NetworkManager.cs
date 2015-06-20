@@ -16,14 +16,17 @@ public class NetworkManager : MonoBehaviour
     public GameObject BlackShot = GameObject.Find("blackShotgun");
     public GameObject AmyCac = GameObject.Find("MagicAmyCac");
     public GameObject AmySniper = GameObject.Find("MagicAmySniper");
+    public GameObject flag;
     public int SavedChar = 1;
     public int SavedSpawn = 0;
     public int SavedWeapon = 1;
     GameObject player;
+    GameObject objective;
+    int ctf;
 
     void Awake()
     {
-        MasterServer.ipAddress = "127.0.0.1";
+       MasterServer.ipAddress = PlayerPrefs.GetString("DaIP");
        SavedChar = PlayerPrefs.GetInt("SelectedCharacter");
        SavedSpawn = PlayerPrefs.GetInt("SelectedSpawn");
        SavedWeapon = PlayerPrefs.GetInt("SelectedWeapon");
@@ -32,7 +35,7 @@ public class NetworkManager : MonoBehaviour
     void Start()
     {
         NetworkConnectionError err = Network.InitializeServer(4, 25000, !Network.HavePublicAddress());
-
+        
         if (err == NetworkConnectionError.NoError)
             MasterServer.RegisterHost(typeName, gameName);
         else
@@ -53,6 +56,7 @@ public class NetworkManager : MonoBehaviour
 
     void OnServerInitialized()
     {
+        SpawnFlag();
         SpawnPlayer(500, 27, 560);
     }
 
@@ -61,6 +65,18 @@ public class NetworkManager : MonoBehaviour
         SpawnPlayer(490,27, 550);
     }
 
+    public void SpawnFlag()
+    {
+        ctf = PlayerPrefs.GetInt("SelectedGameMode");
+        Debug.Log(ctf);
+        if (ctf == 1)
+        {
+            Debug.Log("Spawnflag");
+            objective = Network.Instantiate(flag, new Vector3(389.3f, 28.2f, 654.3f), Quaternion.identity, 0) as GameObject;
+
+        }
+    
+    }
     public void SpawnPlayer(float x, float y, float z)
     {
         //GameObject player = Network.Instantiate(playerPrefab, new Vector3(x, y, z), Quaternion.identity, 0) as GameObject;
