@@ -8,11 +8,8 @@ public class RedFlag : MonoBehaviour {
 	void Update()
 	{
 		MyFLag = PlayerPrefs.GetInt ("Flag");
-	}
-	
-	public void SetActive()
-	{
-		if (MyFLag != 3)		
+
+		if (PlayerPrefs.GetInt("Flag") != 3)		
 		{
 			gameObject.SetActive(false);
 		}
@@ -21,4 +18,16 @@ public class RedFlag : MonoBehaviour {
 			gameObject.SetActive (true);
 		}
 	}
+	
+	//public void SetActive()
+	//{
+	//	if (MyFLag != 3)		
+	//	{
+	//		gameObject.SetActive(false);
+	//	}
+	//	else 
+	//	{
+	//		gameObject.SetActive (true);
+	//	}
+	//}
 }

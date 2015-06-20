@@ -8,10 +8,7 @@ public class BlueFlag : MonoBehaviour {
 	void Update()
 	{
 		MyFLag = PlayerPrefs.GetInt ("Flag");
-	}
 
-	public void SetActive()
-	{
 		if (PlayerPrefs.GetInt("Flag") != 2)		
 		{
 			gameObject.SetActive(false);
@@ -21,4 +18,16 @@ public class BlueFlag : MonoBehaviour {
 			gameObject.SetActive (true);
 		}
 	}
+
+	// public void SetActive()
+	// {
+	// 	if (PlayerPrefs.GetInt("Flag") != 2)		
+	// 	{
+	// 		gameObject.SetActive(false);
+	// 	}
+	// 	else 
+	// 	{
+	// 		gameObject.SetActive (true);
+	// 	}
+	// }
 }

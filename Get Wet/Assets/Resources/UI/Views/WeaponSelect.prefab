@@ -331,7 +331,7 @@ GameObject:
   - 114: {fileID: 11458698}
   - 114: {fileID: 11495094}
   m_Layer: 0
-  m_Name: ShotGun
+  m_Name: Machinegun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_Color: {r: .654901981, g: .921568692, b: .992156923, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: a4583a7ee4862b84f80dd1a18462f7ea, type: 3}
-    m_FontSize: 24
+    m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shotgun
+  m_Text: Machinegun
 --- !u!114 &11461946
 MonoBehaviour:
   m_ObjectHideFlags: 1

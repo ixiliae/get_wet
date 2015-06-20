@@ -8,11 +8,8 @@ public class FlagCaptured : MonoBehaviour {
 	void Update()
 	{
 		MyFLag = PlayerPrefs.GetInt ("Flag");
-	}
-	
-	public void SetActive()
-	{
-		if (MyFLag != 1) 
+
+		if (PlayerPrefs.GetInt("Flag") != 1) 
 		{
 			gameObject.SetActive (false);
 		} 
@@ -21,4 +18,16 @@ public class FlagCaptured : MonoBehaviour {
 			gameObject.SetActive (true);
 		}
 	}
+	
+	//public void SetActive()
+	//{
+	//	if (MyFLag != 1) 
+	//	{
+	//		gameObject.SetActive (false);
+	//	} 
+	//	else 
+	//	{
+	//		gameObject.SetActive (true);
+	//	}
+	//}
 }
